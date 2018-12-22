@@ -1,0 +1,51 @@
+//
+// Base style
+//
+
+.mydoc-navbar {
+  height: $navbar-height;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 32px;
+}
+
+.mydoc-navbar-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+//
+// Logo
+//
+
+.mydoc-navbar-brand {
+  @include iphone-x-landscape() {
+    padding-left: env(safe-area-inset-left);
+  }
+}
+
+
+//
+// Middle menu
+//
+
+.mydoc-navbar-menu {
+  align-self: center;
+}
+
+
+//
+// User menu
+//
+
+.mydoc-navbar-auth {
+  padding-right: 24px;
+
+  @include iphone-x-landscape() {
+    padding-right: env(safe-area-inset-right);
+  }
+}

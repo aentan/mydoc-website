@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-erx</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.2424,20.2424 L11.0502,11.0502 L6.1002,16.0002 C3.3672,18.7332 3.3672,23.1662 6.1002,25.8992 C8.8342,28.6332 13.2662,28.6332 16.0002,25.8992 L20.9502,20.9502 L25.8994353,16.0005782 C28.6330059,13.265841 28.6330059,8.83379237 25.8995068,6.10029322 C23.1659825,3.36676893 18.7338175,3.36676893 16.0002932,6.10029322 L11.0502932,11.0502932 L12.4645068,12.4645068 L17.4145068,7.51450678 C19.3669825,5.56203107 22.5328175,5.56203107 24.4852932,7.51450678 C26.4377941,9.46700763 26.4377941,12.632959 24.4851424,14.5864441 L19.5353647,19.5352218 L20.2424,20.2424 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-erx" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#2333FF" xlink:href="#path-1"></use>
+    </g>
+</svg>

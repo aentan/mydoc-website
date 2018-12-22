@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-reminders</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16,28 C14.3425,28 13,26.6575 13,25 L19,25 C19,26.6575 17.6575,28 16,28 Z M15.2375151,4 L16.7622503,4 C20.600144,4 23.8972987,6.72548467 24.61938,10.4948383 L26.0188438,17.8002115 C26.0441003,17.9320538 26.0956433,18.0574613 26.1704003,18.1689586 L27.7333222,20.5 C28.2271957,21.2365944 28.0304315,22.2340857 27.2938371,22.7279592 C27.0293289,22.9053073 26.7180603,23 26.3996,23 L5.60016532,23 C4.71332693,23 3.99440236,22.2810754 3.99440236,21.394237 C3.99440236,21.0757768 4.08909511,20.7645082 4.26644317,20.5 L5.82936505,18.1689586 C5.90412203,18.0574613 5.95566503,17.9320538 5.98092156,17.8002115 L7.38038532,10.4948383 C8.10246667,6.72548467 11.3996214,4 15.2375151,4 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-reminders" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#2333FF" xlink:href="#path-1"></use>
+    </g>
+</svg>

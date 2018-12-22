@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-case-note</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,4 C8.8954305,4 8,4.8954305 8,6 L8,26 C8,27.1045695 8.8954305,28 10,28 L22,28 C23.1045695,28 24,27.1045695 24,26 L24,6 C24,4.8954305 23.1045695,4 22,4 L10,4 Z M10,2 L22,2 C24.209139,2 26,3.790861 26,6 L26,26 C26,28.209139 24.209139,30 22,30 L10,30 C7.790861,30 6,28.209139 6,26 L6,6 C6,3.790861 7.790861,2 10,2 Z M11,13 C10.4477153,13 10,12.5522847 10,12 C10,11.4477153 10.4477153,11 11,11 L21,11 C21.5522847,11 22,11.4477153 22,12 C22,12.5522847 21.5522847,13 21,13 L11,13 Z M11,9 C10.4477153,9 10,8.55228475 10,8 C10,7.44771525 10.4477153,7 11,7 L21,7 C21.5522847,7 22,7.44771525 22,8 C22,8.55228475 21.5522847,9 21,9 L11,9 Z M11,17 C10.4477153,17 10,16.5522847 10,16 C10,15.4477153 10.4477153,15 11,15 L21,15 C21.5522847,15 22,15.4477153 22,16 C22,16.5522847 21.5522847,17 21,17 L11,17 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-case-note" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#2333FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

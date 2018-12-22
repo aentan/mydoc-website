@@ -1,0 +1,8 @@
+baseURL = "https://my-doc.com/"
+languageCode = "en-us"
+title = "MyDoc"
+
+copyright = "All Rights Reserved"
+
+[params]
+  title = "MyDoc"

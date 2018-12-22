@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-health-diary</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.997,10 C6.894,10 6,9.106 6,8.003 L5.999,8.003 C5.999,8.002 6,8.001 6,8 C6,6.895 6.895,6 8,6 L24,6 C24.932,6 25.715,6.637 25.937,7.499 C25.363,7.181 24.703,7 24,7 L8,7 C7.448,7 7,7.448 7,8 C7,8.552 7.448,9 8,9 L24,9 C24.938,9 25.719,9.648 25.935,10.52 C25.36,10.199 24.706,10 24,10 L7.997,10 Z M24,4 L8,4 C5.791,4 4,5.791 4,8 C4,8.001 4.001,8.002 4.001,8.003 L4,8.003 L4,24 C4,26.209 5.791,28 8,28 L24,28 C26.209,28 28,26.209 28,24 L28,15 L28,14 L28,8 C28,5.791 26.209,4 24,4 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-health-diary" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#2333FF" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+//
+// Slider
+//
+
+.mydoc-slider {
+  .mydoc-slide {
+    width: 100%;
+
+    .slide-screenshot {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .slide-content {
+      padding-top: 32px;
+
+      @include media(">md") {
+        padding-top: 64px;
+      }
+    }
+  }
+
+  .mydoc-slider-pager {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 64px;
+    position: absolute;
+    bottom: 0;
+
+    a {
+      @include text-hide();
+
+      margin-left: 4px;
+      margin-right: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: $color-text-light;
+    }
+
+    .activeSlide {
+      background-color: $color-text-action;
+    }
+  }
+}

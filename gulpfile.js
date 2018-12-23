@@ -8,8 +8,8 @@ var path = require('path');
   
 gulp.task('svgstore', function () {
   var svgs = gulp
-    .src('static/svg/icon/src/*.svg')
-    .pipe(rename({ prefix: 'icon-' }))
+    .src('static/svg/icons/src/*.svg')
+    // .pipe(rename({ prefix: 'icon-' }))
     .pipe(svgmin(function (file) {
       var prefix = path.basename(file.relative, path.extname(file.relative));
       return {
@@ -38,7 +38,7 @@ gulp.task('svgstore', function () {
 
 // Watch asset folder for changes
 gulp.task("watch", ["svgstore"], function () {
-  gulp.watch("static/svg/icon/src/**/*", ["svgstore"])
+  gulp.watch("static/svg/icons/src/**/*", ["svgstore"])
 })
 
 // Set watch as default task

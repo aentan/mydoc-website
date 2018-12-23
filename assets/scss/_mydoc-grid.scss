@@ -2,8 +2,8 @@
 
 .container {
   width: 100%;
-  padding-right: $grid-guttere / 2;
-  padding-left: $grid-guttere / 2;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
   margin-right: auto;
   margin-left: auto;
   max-width: $container-max-width;
@@ -23,24 +23,36 @@
   padding-left: $grid-gutter / 2;
 }
 
+.row-stretched {
+  justify-content: space-between;
+
+  .col {
+    flex: initial;
+  }
+}
+
 
 // Grid columns
 
-@for $i from 1 through $grid-max-columns {
-  .col-#{$i} {
-    flex: 0 0 percentage($i / $grid-max-columns);
-    max-width: percentage($i / $grid-max-columns);
+@include media(">md") {
+  @for $i from 1 through $grid-max-columns {
+    .col-#{$i} {
+      flex: 0 0 percentage($i / $grid-max-columns);
+      max-width: percentage($i / $grid-max-columns);
+    }
   }
 }
 
 
 // Grid offset
 
-@for $i from 0 through ($grid-max-columns - 1) {
-  @if not ($i == 0) { // Avoid emitting useless .offset-0
-    .offset-#{$i} {
-      $num: $i / $grid-max-columns;
-      margin-left: if($num == 0, 0, percentage($num));
+@include media(">md") {
+  @for $i from 0 through ($grid-max-columns - 1) {
+    @if not ($i == 0) { // Avoid emitting useless .offset-0
+      .offset-#{$i} {
+        $num: $i / $grid-max-columns;
+        margin-left: if($num == 0, 0, percentage($num));
+      }
     }
   }
 }

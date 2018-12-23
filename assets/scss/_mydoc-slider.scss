@@ -38,7 +38,11 @@
     width: 100%;
     margin-top: 32px;
 
-    a {
+    @include media(">md") {
+      display: none;
+    }
+
+    span {
       @include text-hide();
 
       margin-left: 4px;
@@ -49,7 +53,7 @@
       background-color: $color-text-light;
     }
 
-    .activeSlide {
+    .cycle-pager-active {
       background-color: $color-text-action;
     }
   }

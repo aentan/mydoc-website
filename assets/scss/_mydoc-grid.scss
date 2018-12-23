@@ -34,11 +34,20 @@
 
 // Grid columns
 
-@include media(">md") {
-  @for $i from 1 through $grid-max-columns {
-    .col-#{$i} {
-      flex: 0 0 percentage($i / $grid-max-columns);
-      max-width: percentage($i / $grid-max-columns);
+@for $i from 1 through $grid-max-columns {
+  .col-#{$i} {
+    flex: 0 0 percentage($i / $grid-max-columns);
+    max-width: percentage($i / $grid-max-columns);
+  }
+}
+
+@each $bp, $w in $breakpoints {
+  @include media(">#{$bp}") {
+    @for $i from 1 through $grid-max-columns {
+      .col-#{$bp}-#{$i} {
+        flex: 0 0 percentage($i / $grid-max-columns);
+        max-width: percentage($i / $grid-max-columns);
+      }
     }
   }
 }
@@ -46,12 +55,23 @@
 
 // Grid offset
 
-@include media(">md") {
-  @for $i from 0 through ($grid-max-columns - 1) {
-    @if not ($i == 0) { // Avoid emitting useless .offset-0
-      .offset-#{$i} {
-        $num: $i / $grid-max-columns;
-        margin-left: if($num == 0, 0, percentage($num));
+@for $i from 0 through ($grid-max-columns - 1) {
+  @if not ($i == 0) { // Avoid emitting useless .offset-0
+    .offset-#{$i} {
+      $num: $i / $grid-max-columns;
+      margin-left: if($num == 0, 0, percentage($num));
+    }
+  }
+}
+
+@each $bp, $w in $breakpoints {
+  @include media(">#{$bp}") {
+    @for $i from 0 through ($grid-max-columns - 1) {
+      @if not ($i == 0) { // Avoid emitting useless .offset-0
+        .offset-#{$bp}-#{$i} {
+          $num: $i / $grid-max-columns;
+          margin-left: if($num == 0, 0, percentage($num));
+        }
       }
     }
   }

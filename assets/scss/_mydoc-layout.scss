@@ -1,0 +1,16 @@
+//
+// General
+//
+
+html, body, main {
+  height: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-brand-llc;
+}

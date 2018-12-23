@@ -26,58 +26,65 @@ $color-text-action:             $color-brand-primary;
 $base-font-family:              proxima-nova, sans-serif;
 
 $font-weight-regular:           400;
+$font-weight-semibold:          600;
 $font-weight-bold:              700;
 $font-weight-extrabold:         800;
 
 $h1-font-size:                  3.2rem;
-$h1-line-height:                4;
+$h1-line-height:                4rem;
 $h1-font-weight:                $font-weight-extrabold;
 $h1-margin-bottom:              3.2rem;
 $h1-color:                      $color-text-darkest;
 
 $h2-font-size:                  3.2rem;
-$h2-line-height:                4;
+$h2-line-height:                4rem;
 $h2-font-weight:                $font-weight-extrabold;
 $h2-margin-bottom:              3.2rem;
 
 $h3-font-size:                  2.4rem;
-$h3-line-height:                3.2;
+$h3-line-height:                3.2rem;
 $h3-font-weight:                $font-weight-bold;
 $h3-margin-bottom:              3.2rem;
 
 $h4-font-size:                  2rem;
-$h4-line-height:                3.2;
+$h4-line-height:                3.2rem;
 $h4-font-weight:                $font-weight-bold;
 $h4-margin-bottom:              3.2rem;
 
 $h5-font-size:                  1.8rem;
-$h5-line-height:                2.4;
+$h5-line-height:                2.4rem;
 $h5-font-weight:                $font-weight-bold;
 $h5-margin-bottom:              2.4rem;
 
 $h6-font-size:                  1.6rem;
-$h6-line-height:                2;
+$h6-line-height:                2rem;
 $h6-font-weight:                $font-weight-bold;
 $h6-margin-bottom:              2rem;
 
 $lead-font-size:                2rem;
-$lead-line-height:              3.2;
+$lead-line-height:              3.2rem;
 $lead-font-weight:              $font-weight-regular;
 $lead-margin-bottom:            3.2rem;
 
 $base-font-size:                1.8rem;
-$base-line-height:              2.4;
+$base-line-height:              2.4rem;
 $base-font-weight:              $font-weight-regular;
 $base-margin-bottom:            2.4rem;
 
 $small-font-size:               1.6rem;
-$small-line-height:             2.4;
+$small-line-height:             2.4rem;
 $small-font-weight:             $font-weight-regular;
 $small-margin-bottom:           2.4rem;
 
 $button-font-size:              1.6rem;
-$button-line-height:            2;
+$button-line-height:            2rem;
 $button-font-weight:            $font-weight-bold;
+$button-text-transform:         uppercase;
+$button-color:                  $color-ui-white;
+
+$button-sm-font-size:           1.2rem;
+$button-sm-line-height:         1.6rem;
+$button-sm-font-weight:         $font-weight-semibold;
 
 
 // UI knick knacks
@@ -86,7 +93,26 @@ $base-border-radius:            8px;
 $base-box-shadow:               0 5px 15px 0 rgba(0, 0, 0, .08), 0 15px 35px 0 rgba(86, 147, 249, .1);
 
 
+// Z indeices
+
+$zindex-dropdown:                   1000;
+$zindex-sticky:                     1020;
+$zindex-fixed:                      1030;
+$zindex-modal-backdrop:             1040;
+$zindex-modal:                      1050;
+$zindex-popover:                    1060;
+$zindex-tooltip:                    1070;
+
+
 // Grid system
+
+$breakpoints: (
+  sm:     576px,
+  md:     768px,
+  lg:     992px,
+  xl:     1248,
+  ul:     1408
+);
 
 $grid-max-columns:              12;
 $grid-gutter:                   24px;
@@ -110,6 +136,10 @@ $button-border-radius:          $base-border-radius;
 $button-box-shadow:             $base-box-shadow;
 $button-padding-horizontal:     24px;
 $button-padding-vertical:       14px;
+$button-bg:                     $color-brand-primary;
+
+$button-sm-padding-horizontal:  12px;
+$button-sm-padding-vertical:    8px;
 
 $card-border-radius:            8px;
 $card-box-shadow:               $base-box-shadow;
@@ -118,3 +148,7 @@ $card-padding-vertical:         24px;
 
 $navbar-height:                 64px;
 $navbar-height-md:              80px;
+$navbar-font-weight:            $font-weight-semibold;
+$navbar-link-padding-horizontal:16px;
+$navbar-link-padding-vertical:  16px;
+$navbar-bg:                     rgba($color-ui-white, 0.8);

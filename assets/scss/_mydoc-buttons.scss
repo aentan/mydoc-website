@@ -1,0 +1,30 @@
+.mydoc-btn {
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
+  text-transform: $button-text-transform;
+  color: $button-color;
+  padding-right: $button-padding-horizontal;
+  padding-left: $button-padding-horizontal;
+  padding-bottom: $button-padding-vertical;
+  padding-top: $button-padding-vertical;
+  background-color: $button-bg;
+  border-radius: $button-border-radius;
+  letter-spacing: 0.05rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.mydoc-btn-sm {
+    font-size: $button-sm-font-size;
+    font-weight: $button-sm-font-weight;
+    line-height: $button-sm-line-height;
+    padding-right: $button-sm-padding-horizontal;
+    padding-left: $button-sm-padding-horizontal;
+    padding-bottom: $button-sm-padding-vertical;
+    padding-top: $button-sm-padding-vertical;
+    letter-spacing: 0.02rem;
+  }
+}
+

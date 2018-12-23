@@ -28,10 +28,6 @@ main > section {
     padding-top: $section-padding-top-md;
     padding-bottom: $section-padding-bottom-md;
   }
-
-  .row {
-    margin-top: 48px;
-  }
 }
 
 
@@ -49,6 +45,11 @@ section.hero {
 
   @include media("<md") {
     padding-top: $section-padding-top + $navbar-height;
+  }
+
+  @include media("<md", "landscape") {
+    min-height: 560px;
+    background-size: 40%;
   }
 
   @include media(">md") {
@@ -84,13 +85,13 @@ section.hero {
 
   .logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
   .logo {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 16px;
   }
 }
 

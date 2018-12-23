@@ -7,6 +7,15 @@
     width: 100%;
 
     .slide-screenshot {
+      padding: 0 24px;
+      height: 480px;
+      overflow: hidden;
+
+      @include media(">md") {
+        padding: 0;
+        height: auto;
+      }
+
       img {
         display: block;
         width: 100%;
@@ -27,9 +36,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 64px;
-    position: absolute;
-    bottom: 0;
+    margin-top: 32px;
 
     a {
       @include text-hide();
@@ -44,6 +51,32 @@
 
     .activeSlide {
       background-color: $color-text-action;
+    }
+  }
+
+  .mydoc-slider-nav {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: $color-ui-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: $zindex-dropdown;
+
+    &.prev {
+      left: -8px;
+    }
+
+    &.next {
+      right: -8px;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
     }
   }
 }

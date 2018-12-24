@@ -256,4 +256,14 @@ content:
           photo: "https://www.placehold.it/160x160"
           group: "Tokio Marine"
           quote: "We can't understand how we've been living without MyDoc. MyDoc did exactly what you said it does."
+    research:
+      headline: "Follow-up rates for virtual consults are nearly 6x higher, generating nearly 5x greater savings."
+      subhead: "–PwC report on Digital Health ROI, featuring MyDoc data, a first-of-its kind study in Asia."
+      documents:
+        - logo: "/svg/logos/research_logo_pwc.svg"
+          label: "Digital health: Challenges and solutions to measuring Return on Investment (ROI)"
+          url: "https://www.pwc.com/sg/en/publications/assets/digital-health-roi-2017.pdf"
+        - logo: "/img/logos/research_logo_jmir@2x.png"
+          label: "The Application of Telemedicine in Orthopedic Surgery in Singapore: A Pilot Study on a Secure, Mobile Telehealth Application and Messaging Platform"
+          url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4114459/"
 ---

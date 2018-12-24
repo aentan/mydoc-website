@@ -166,6 +166,27 @@
       </div>
     </section>
 
+    <section class="research">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-6 col-lg-5 offset-lg-1">
+            <h2>{{ $.Param "content.sections.research.headline" }}</h2>
+            <p class="lead">{{ $.Param "content.sections.research.subhead" }}</p>
+          </div>
+          <div class="col col-md-6 col-lg-4 offset-lg-1">
+            {{ range $document := $.Param "content.sections.research.documents" }}
+            <div class="research-document">
+              <a href="{{ $document.url }}" class="clamped">{{ $document.label }}</a>
+              <div class="document-logo">
+                <img src="{{ $document.logo }}" alt="Logo">
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   {{ partial "footer.html" . }}

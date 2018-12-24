@@ -210,3 +210,63 @@ section.hero {
     }
   }
 }
+
+
+// 
+// Research section
+// 
+
+.research {
+  padding-bottom: 272px;
+  background-image: url('/img/research-bg-m@2x.jpg'), url('/img/research-bg-w@2x.jpg');
+  background-repeat: no-repeat;
+  background-size: 357px 261px, 292px 261px;
+  background-position: -160px bottom, 256px bottom;
+
+  @include media(">sm") {
+    padding-bottom: 288px;
+    background-position: -96px bottom, 368px bottom;
+  }
+
+  @include media(">md") {
+    padding-bottom: 304px;
+    background-position: 48px bottom, 576px bottom;
+  }
+
+  @include media(">lg") {
+    padding-bottom: 320px;
+    background-position: 8% bottom, 72% bottom;
+  }
+
+  @include media(">xl") {
+    padding-bottom: 320px;
+    background-position: 24% bottom, 72% bottom;
+  }
+
+  .research-document {
+    display: flex;
+    padding-left: 80px;
+    margin-bottom: 32px;
+    height: 72px;
+    background-image: url('/img/research-paper.png');
+    background-repeat: no-repeat;
+    background-size: 55px 72px;
+    background-position: left top;
+
+    a {
+      display: block;
+      margin-right: 16px;
+      height: 72px;
+      overflow: hidden;
+    }
+  }
+
+  .document-logo {
+    width: 128px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

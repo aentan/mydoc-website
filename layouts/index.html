@@ -47,33 +47,17 @@
         <h2>{{ $.Param "content.sections.creating_value.headline" }}</h2>
         <p class="lead">{{ $.Param "content.sections.creating_value.subhead" }}</p>
         <div class="row row-stretched">
+          {{ range $feature := $.Param "content.sections.creating_value.features" }}
           <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="feature-icon">
               <svg viewBox="0 0 32 32">
-                <use xlink:href="#icon-health-money-scale"></use>
+                <use xlink:href="#{{ $feature.icon }}"></use>
               </svg>
             </div>
-            <h3>{{ $.Param "content.sections.creating_value.feature_1.headline" }}</h3>
-            <p>{{ $.Param "content.sections.creating_value.feature_1.body" }}</p>
+            <h3>{{ $feature.headline }}</h3>
+            <p>{{ $feature.body }}</p>
           </div>
-          <div class="col col-sm-6 col-md-4 col-lg-3">
-            <div class="feature-icon">
-              <svg viewBox="0 0 32 32">
-                <use xlink:href="#icon-satisfaction"></use>
-              </svg>
-            </div>
-            <h3>{{ $.Param "content.sections.creating_value.feature_2.headline" }}</h3>
-            <p>{{ $.Param "content.sections.creating_value.feature_2.body" }}</p>
-          </div>
-          <div class="col col-sm-6 col-md-4 col-lg-3">
-            <div class="feature-icon">
-              <svg viewBox="0 0 32 32">
-                <use xlink:href="#icon-abacus"></use>
-              </svg>
-            </div>
-            <h3>{{ $.Param "content.sections.creating_value.feature_3.headline" }}</h3>
-            <p>{{ $.Param "content.sections.creating_value.feature_3.body" }}</p>
-          </div>
+          {{ end }}
         </div>
       </div>
     </section>
@@ -126,6 +110,27 @@
               <use xlink:href="#icon-chevron-right"></use>
             </svg>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-benefits light">
+      <div class="container">
+        <h2>{{ $.Param "content.sections.features_benefits.headline" }}</h2>
+        <p class="lead">{{ $.Param "content.sections.features_benefits.subhead" }}</p>
+        <div class="row row-stretched">
+          {{ range $index, $feature := $.Param "content.sections.features_benefits.features" }}
+          <div class="col col-sm-6 col-md-4 col-lg-3">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#{{ $feature.icon }}"></use>
+              </svg>
+            </div>
+            <h3>{{ $feature.headline }}</h3>
+            <p>{{ $feature.body }}</p>
+          </div>
+          {{ if modBool (add $index 1) 3 }}<div class="break"></div>{{ end }}
+          {{ end }}
         </div>
       </div>
     </section>

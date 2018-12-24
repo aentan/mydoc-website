@@ -144,3 +144,26 @@ section.hero {
 }
 
 
+// 
+// CFeatures and benefits section
+// 
+
+.features-benefits {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .feature-icon {
+    margin-bottom: 16px;
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .col {
+    margin-bottom: 16px;
+  }
+}

@@ -3,6 +3,7 @@
 $dark-color: $color-text-darkest;
 $light-color: $color-text-light;
 
+$section-height: 544px;
 $item-line-height: 32px;
 $ailments-count: 51;
 $cut-bg: 100 / $ailments-count;
@@ -12,7 +13,7 @@ $cycle-time: $ailments-count * $speed;
 
 
 .common-ailments {
-  height: 448px;
+  height: $section-height;
   padding: 0;
   overflow: hidden;
 
@@ -55,7 +56,7 @@ $cycle-time: $ailments-count * $speed;
   left: 50%;
   z-index: 0;
   width: 50%;
-  height: 448px;
+  height: $section-height;
   padding-left: 16px;
   overflow: hidden;
 }

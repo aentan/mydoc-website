@@ -173,3 +173,40 @@ section.hero {
 // Common ailments section
 // see _mydoc-ailments-rotator.scss
 //
+
+
+// 
+// Want to use section
+//
+
+.want-to-use {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}

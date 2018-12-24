@@ -241,4 +241,19 @@ content:
         - Vomiting
         - Warts
         - White spots
+    want_to_use:
+      headline: "Healthcare people want to use."
+      testimonials:
+        - name: "Inez Wong"
+          photo: "https://www.placehold.it/160x160"
+          group: "AXA"
+          quote: "Man, this thing is getting better and better as I learn more about it. MyDoc is awesome!"
+        - name: "Rebecca Lee"
+          photo: "https://www.placehold.it/160x160"
+          group: "Disney"
+          quote: "I don't always clop, but when I do, it's because of MyDoc. Dude, your stuff is the bomb! You guys rock!"
+        - name: "Avery Laksh"
+          photo: "https://www.placehold.it/160x160"
+          group: "Tokio Marine"
+          quote: "We can't understand how we've been living without MyDoc. MyDoc did exactly what you said it does."
 ---

@@ -135,6 +135,21 @@
       </div>
     </section>
 
+    <section class="common-ailments">
+      <div class="wrapper">
+        <div class="headline">
+          <h3>{{ $.Param "content.sections.common_ailments.headline" }}</h3>
+        </div>
+        <div class="ailments-list">
+          <div class="ailments-list-wrapper">
+            {{ range $ailment := $.Param "content.sections.common_ailments.ailments" }}
+            <span>{{ $ailment }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   {{ partial "footer.html" . }}

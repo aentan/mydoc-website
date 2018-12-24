@@ -85,4 +85,160 @@ content:
         - icon: "icon-advice"
           headline: "Personal health advice"
           body: "Ask health questions, attach photos, get instant medical advice."
+    common_ailments:
+      headline: "Since 2012, MyDoc has been used for"
+      ailments:
+        - Acid reflux
+        - Acne
+        - Allergies
+        - Asthma
+        - Bleeding gums
+        - Burns
+        - Chronic medication refills
+        - Conjunctivitis
+        - Constipation
+        - Contact dermatitis
+        - Cough
+        - Depression
+        - Diabetes mellitus
+        - Diaper dermatitis
+        - Diarrhoea
+        - Ear pain
+        - Eczema
+        - Fatigue
+        - Fever
+        - Gastric pains
+        - Fungal infection
+        - Haemorrhoids
+        - Headaches
+        - Heartburn
+        - High blood pressure
+        - Hyperlipidemia
+        - Insect bite
+        - Itchy/irritated eyes
+        - Joint pains
+        - Lower back pain
+        - Menstrual irregularities
+        - Obesity
+        - Oral ulcers
+        - Wound infection
+        - Red eye
+        - Respiratory tract infection
+        - Sexual dysfunction
+        - Sinusitis
+        - Skin inflammation
+        - Sleep disturbances
+        - Sore throat
+        - Sprains
+        - Stye
+        - Suspected UTI
+        - Swollen insect bites
+        - Travel medication advice
+        - Urinary tract infection
+        - Vaginal infection
+        - Vomiting
+        - Warts
+        - White spots
+        - Acid reflux
+        - Acne
+        - Allergies
+        - Asthma
+        - Bleeding gums
+        - Burns
+        - Chronic medication refills
+        - Conjunctivitis
+        - Constipation
+        - Contact dermatitis
+        - Cough
+        - Depression
+        - Diabetes mellitus
+        - Diaper dermatitis
+        - Diarrhoea
+        - Ear pain
+        - Eczema
+        - Fatigue
+        - Fever
+        - Gastric pains
+        - Fungal infection
+        - Haemorrhoids
+        - Headaches
+        - Heartburn
+        - High blood pressure
+        - Hyperlipidemia
+        - Insect bite
+        - Itchy/irritated eyes
+        - Joint pains
+        - Lower back pain
+        - Menstrual irregularities
+        - Obesity
+        - Oral ulcers
+        - Wound infection
+        - Red eye
+        - Respiratory tract infection
+        - Sexual dysfunction
+        - Sinusitis
+        - Skin inflammation
+        - Sleep disturbances
+        - Sore throat
+        - Sprains
+        - Stye
+        - Suspected UTI
+        - Swollen insect bites
+        - Travel medication advice
+        - Urinary tract infection
+        - Vaginal infection
+        - Vomiting
+        - Warts
+        - White spots
+        - Acid reflux
+        - Acne
+        - Allergies
+        - Asthma
+        - Bleeding gums
+        - Burns
+        - Chronic medication refills
+        - Conjunctivitis
+        - Constipation
+        - Contact dermatitis
+        - Cough
+        - Depression
+        - Diabetes mellitus
+        - Diaper dermatitis
+        - Diarrhoea
+        - Ear pain
+        - Eczema
+        - Fatigue
+        - Fever
+        - Gastric pains
+        - Fungal infection
+        - Haemorrhoids
+        - Headaches
+        - Heartburn
+        - High blood pressure
+        - Hyperlipidemia
+        - Insect bite
+        - Itchy/irritated eyes
+        - Joint pains
+        - Lower back pain
+        - Menstrual irregularities
+        - Obesity
+        - Oral ulcers
+        - Wound infection
+        - Red eye
+        - Respiratory tract infection
+        - Sexual dysfunction
+        - Sinusitis
+        - Skin inflammation
+        - Sleep disturbances
+        - Sore throat
+        - Sprains
+        - Stye
+        - Suspected UTI
+        - Swollen insect bites
+        - Travel medication advice
+        - Urinary tract infection
+        - Vaginal infection
+        - Vomiting
+        - Warts
+        - White spots
 ---

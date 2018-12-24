@@ -1,0 +1,99 @@
+// Variables
+
+$dark-color: $color-text-darkest;
+$light-color: $color-text-light;
+
+$item-line-height: 32px;
+$ailments-count: 51;
+$cut-bg: 100 / $ailments-count;
+$cut-list: 100 / ($ailments-count - 1);
+$speed: .5;
+$cycle-time: $ailments-count * $speed;
+
+
+.common-ailments {
+  height: 448px;
+  padding: 0;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  .headline {
+    width: 50%;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: $item-line-height;
+    margin: 0;
+    color: $dark-color;
+    text-align: right;
+  }
+}
+
+// List Animation
+
+@keyframes list-animation {
+  0% { color: $light-color; }
+	#{($cut-list)}% { color: $dark-color;  }
+	#{($cut-list * 2)}% { color: $light-color;  }
+	100% { color: $light-color; }
+}
+
+
+// Ailments background
+
+.ailments-list {
+  position: absolute;
+  left: 50%;
+  z-index: 0;
+  width: 50%;
+  height: 448px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+.ailments-list-wrapper {
+  position: absolute;
+  top: 50%;
+  margin-top: -$ailments-count * $item-line-height + ($item-line-height / 2);
+
+  @for $i from 2 through ($ailments-count * 2) {
+    span:nth-child(#{$i}) {
+      animation-delay: #{-($ailments-count * $speed) + ($speed * ($i - 1))}s;
+    }
+  }
+}
+
+.ailments-list span {
+  display: block;
+  font-size: 24px;
+  line-height: $item-line-height;
+  color: $light-color;
+  white-space: nowrap;
+  animation: list-animation #{$cycle-time}s linear infinite 0s;
+}
+
+// Background animation
+
+.ailments-list-wrapper {
+  transform: translate3d(0,0,0);
+  animation: bg-animation #{$cycle-time}s linear infinite 0s;
+}
+
+@keyframes bg-animation {
+  @for $i from 1 through ($ailments-count) {
+    #{$cut-bg * $i}% {
+      transform: translateY(-$item-line-height * $i);
+    }
+  }
+}
+
+// By Aen Tan and James Hay of MyDoc

@@ -44,11 +44,11 @@ section.hero {
   background-repeat: no-repeat;
 
   @include media("<md") {
-    padding-top: $section-padding-top + $navbar-height;
+    padding-top: 0;
   }
 
   @include media("<md", "landscape") {
-    min-height: 560px;
+    min-height: 272px;
     background-size: 40%;
   }
 

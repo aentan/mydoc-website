@@ -1,0 +1,10 @@
+// 
+// Cards
+//
+
+.mydoc-card {
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  padding: $card-padding-vertical $card-padding-horizontal;
+  background-color: $card-bg;
+}

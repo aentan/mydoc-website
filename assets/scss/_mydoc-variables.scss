@@ -143,13 +143,17 @@ $button-padding-horizontal:     24px;
 $button-padding-vertical:       14px;
 $button-bg:                     $color-brand-primary;
 
+$form-control-border-radius:    $base-border-radius;
+$form-control-border:           1px solid $color-text-light;
+$form-control-padding-horizontal: 16px;
+$form-control-padding-vertical: 11px;
+$form-control-color:            $color-text-default;
+$form-control-bg:               $color-ui-white;
+$form-control-font-size:        $lead-font-size;
+$form-control-line-height:      $base-line-height;
+
 $button-sm-padding-horizontal:  12px;
 $button-sm-padding-vertical:    8px;
-
-$card-border-radius:            8px;
-$card-box-shadow:               $base-box-shadow;
-$card-padding-horizontal:       24px;
-$card-padding-vertical:         24px;
 
 $navbar-height:                 120px;
 $navbar-height-md:              80px;
@@ -157,3 +161,9 @@ $navbar-font-weight:            $font-weight-semibold;
 $navbar-link-padding-horizontal:16px;
 $navbar-link-padding-vertical:  16px;
 $navbar-bg:                     rgba($color-ui-white, 0.9);
+
+$card-border-radius:            $base-border-radius;
+$card-box-shadow:               $base-box-shadow;
+$card-padding-horizontal:       32px;
+$card-padding-vertical:         32px;
+$card-bg:                       $color-ui-white;

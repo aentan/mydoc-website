@@ -12,6 +12,7 @@
   background-color: $button-bg;
   border-radius: $button-border-radius;
   letter-spacing: 0.05rem;
+  border: 0;
 
   &:hover {
     text-decoration: none;

@@ -1,0 +1,30 @@
+// 
+// Form
+// 
+
+.mydoc-form-group {
+  margin-bottom: 24px;
+
+  label {
+    font-weight: $font-weight-semibold;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    appearance: none;
+    background-color: $form-control-bg;
+    border: $form-control-border;
+    border-radius: $form-control-border-radius;
+    padding: $form-control-padding-vertical $form-control-padding-horizontal;
+    font-size: $form-control-font-size;
+    line-height: $form-control-line-height;
+    -webkit-font-smoothing: antialiased;
+
+    &::placeholder {
+      color: $color-text-light;
+    }
+  }
+}

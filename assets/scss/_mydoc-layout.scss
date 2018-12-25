@@ -30,6 +30,13 @@ main > section {
   }
 }
 
+main > section:first-child {
+  @include media(">md") {
+    // to clear the fixed navbar
+    padding-top: $section-padding-top-md + $navbar-height-md;
+  }
+}
+
 
 //
 // Hero section
@@ -97,182 +104,6 @@ section.hero {
 
 
 // 
-// Creating value section
-// 
-
-.creating-value {
-  .container > {
-    h2, p {
-      text-align: center;
-    }
-  }
-
-  .feature-icon {
-    margin-bottom: 16px;
-  }
-}
-
-
-// 
-// One platform section
-// 
-
-.one-platform {
-  @include media(">md") {
-    padding-bottom: 0;
-  }
-
-  .container > {
-    h2, p {
-      text-align: center;
-    }
-  }
-
-  .mydoc-slider {
-    margin-top: 48px;
-    position: relative;
-  }
-
-  .phone-container {
-    position: absolute;
-    height: 568px;
-    background-image: url('/img/screenshot-phone-container@2x.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
-}
-
-
-// 
-// Features and benefits section
-// 
-
-.features-benefits {
-  .container > {
-    h2, p {
-      text-align: center;
-    }
-  }
-
-  .feature-icon {
-    margin-bottom: 16px;
-  }
-
-  .row {
-    margin-top: 48px;
-  }
-
-  .col {
-    margin-bottom: 16px;
-  }
-}
-
-
-// 
-// Common ailments section
-// see _mydoc-ailments-rotator.scss
-//
-
-
-// 
-// Want to use section
-//
-
-.want-to-use {
-  .container > {
-    h2, p {
-      text-align: center;
-    }
-  }
-
-  .row {
-    margin-top: 48px;
-  }
-
-  .col {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 24px;
-
-    img {
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-      display: block;
-      margin-bottom: 24px;
-    }
-
-    p {
-      margin-bottom: 8px;
-    }
-  }
-}
-
-
-// 
-// Research section
-// 
-
-.research {
-  padding-bottom: 272px;
-  background-image: url('/img/research-bg-m@2x.jpg'), url('/img/research-bg-w@2x.jpg');
-  background-repeat: no-repeat;
-  background-size: 357px 261px, 292px 261px;
-  background-position: -160px bottom, 256px bottom;
-
-  @include media(">sm") {
-    padding-bottom: 288px;
-    background-position: -96px bottom, 368px bottom;
-  }
-
-  @include media(">md") {
-    padding-bottom: 304px;
-    background-position: 48px bottom, 576px bottom;
-  }
-
-  @include media(">lg") {
-    padding-bottom: 320px;
-    background-position: 8% bottom, 72% bottom;
-  }
-
-  @include media(">xl") {
-    padding-bottom: 320px;
-    background-position: 24% bottom, 72% bottom;
-  }
-
-  .research-document {
-    display: flex;
-    padding-left: 80px;
-    margin-bottom: 32px;
-    height: 72px;
-    background-image: url('/img/research-paper.png');
-    background-repeat: no-repeat;
-    background-size: 55px 72px;
-    background-position: left top;
-
-    a {
-      display: block;
-      margin-right: 16px;
-      height: 72px;
-      overflow: hidden;
-    }
-  }
-
-  .document-logo {
-    width: 128px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
-
-// 
 // CTA
 // 
 
@@ -306,6 +137,10 @@ section.hero {
   @include media(">md") {
     padding-top: $section-padding-top-md;
     padding-bottom: $section-padding-bottom-md;
+  }
+
+  &.light {
+    background-color: $section-light-bg;
   }
 
   .mydoc-footer-nav {

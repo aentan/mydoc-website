@@ -8,7 +8,7 @@ content:
       subhead: "MyDoc is changing the way physicians care and patients receive care, to help people live healthier lives and save money."
       cta:
         label: "Request a demo"
-        url: "/"
+        url: "/contact"
     logo_soup:
       headline: "Backed by the largest insurers and their brokers"
     creating_value:

@@ -8,7 +8,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <title>Contact &ndash; MyDoc</title>
     
-    <link href="/scss/main.min.43506b67b19188fe5fabe3ee63d86f8ef5b055e680d72ad5c8a8ac4e5dc97c9d.css" rel="stylesheet">
+    <link href="/scss/main.min.d79639e935c302bad2b170276b3e0321e07e7332b92d331b02d44e93c0c13513.css" rel="stylesheet">
   </head>
   <body>
 
@@ -96,19 +96,22 @@
               </dl>
             </div>
             <div class="col col-md-6">
-              <form class="mydoc-form">
+              <form class="mydoc-form" action="https://www.enformed.io/s2mazkc" method="POST">
                 <div class="mydoc-form-group">
-                  <label>Name</label>
-                  <input type="text" placeholder="Pixi">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Pixi">
                 </div>
                 <div class="mydoc-form-group">
-                  <label>Email</label>
-                  <input type="text" placeholder="name@example.com">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" placeholder="name@example.com">
                 </div>
                 <div class="mydoc-form-group">
-                  <label>Message</label>
-                  <textarea rows="8" placeholder="Once a upon a time…"></textarea>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="8" placeholder="Once a upon a time…"></textarea>
                 </div>
+                <input type="hidden" name="*default_email" value="hello@aentan.com">
+                <input type="hidden" name="*honeypot">
+                <div class="mydoc-form-validation"></div>
                 <input class="mydoc-btn" type="submit" value="Send Message">
               </form>
             </div>
@@ -117,12 +120,14 @@
       </section>
 
       <section class="contact-map">
-        <div class="row">
-          <div class="map-info col col-md-6 offset-md-6">
-            <div class="mydoc-card">
-              <h3>MyDoc Pte. Ltd.</h3>
-              <p>101C Telok Ayer Street<br>Singapore 068574</p>
-              <div><a href="https://www.google.com.sg/maps/dir//101C&#43;Telok&#43;Ayer&#43;St,&#43;Singapore&#43;018960/@1.281816,103.8462567,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x31da190dae7c1e79:0xea8f0184809b1cab!2m2!1d103.8484454!2d1.281816!3e0">Get Directions</a></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="map-info col col-md-6 offset-md-6">
+              <div class="mydoc-card">
+                <h3>MyDoc Pte. Ltd.</h3>
+                <p>101C Telok Ayer Street<br>Singapore 068574</p>
+                <div><a href="https://www.google.com.sg/maps/dir//101C&#43;Telok&#43;Ayer&#43;St,&#43;Singapore&#43;018960/@1.281816,103.8462567,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x31da190dae7c1e79:0xea8f0184809b1cab!2m2!1d103.8484454!2d1.281816!3e0">Get Directions</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -204,8 +209,9 @@
   </div>
 </footer>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     
     
-    <script src="/js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js" type="text/javascript"></script>
+    <script src="/js/bundle.min.d5758c5150b1f6972080b5dbb80908b129edb542b74cb2ad6367316d87d60e2b.js" type="text/javascript"></script>
   </body>
 </html>

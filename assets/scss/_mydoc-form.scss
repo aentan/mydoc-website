@@ -12,6 +12,7 @@
   }
 
   input[type="text"],
+  input[type="email"],
   textarea {
     width: 100%;
     appearance: none;
@@ -27,4 +28,8 @@
       color: $color-text-light;
     }
   }
+}
+
+.mydoc-form-validation {
+  margin-bottom: 24px;
 }

@@ -9,6 +9,14 @@
   max-width: $container-max-width;
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

@@ -39,19 +39,22 @@
               </dl>
             </div>
             <div class="col col-md-6">
-              <form class="mydoc-form">
+              <form class="mydoc-form" action="https://www.enformed.io/s2mazkc" method="POST">
                 <div class="mydoc-form-group">
-                  <label>Name</label>
-                  <input type="text" placeholder="Pixi">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Pixi">
                 </div>
                 <div class="mydoc-form-group">
-                  <label>Email</label>
-                  <input type="text" placeholder="name@example.com">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" placeholder="name@example.com">
                 </div>
                 <div class="mydoc-form-group">
-                  <label>Message</label>
-                  <textarea rows="8" placeholder="Once a upon a time…"></textarea>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="8" placeholder="Once a upon a time…"></textarea>
                 </div>
+                <input type="hidden" name="*default_email" value="{{ $.Param "content.sections.contact_info.form_to" }}">
+                <input type="hidden" name="*honeypot">
+                <div class="mydoc-form-validation"></div>
                 <input class="mydoc-btn" type="submit" value="Send Message">
               </form>
             </div>
@@ -60,12 +63,14 @@
       </section>
 
       <section class="contact-map">
-        <div class="row">
-          <div class="map-info col col-md-6 offset-md-6">
-            <div class="mydoc-card">
-              <h3>{{ $.Param "content.sections.contact_info.map.headline" }}</h3>
-              <p>{{ $.Param "content.sections.contact_info.map.address" | safeHTML }}</p>
-              <div><a href="{{ $.Param "content.sections.contact_info.map.directions.url" }}">{{ $.Param "content.sections.contact_info.map.directions.label" }}</a></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="map-info col col-md-6 offset-md-6">
+              <div class="mydoc-card">
+                <h3>{{ $.Param "content.sections.contact_info.map.headline" }}</h3>
+                <p>{{ $.Param "content.sections.contact_info.map.address" | safeHTML }}</p>
+                <div><a href="{{ $.Param "content.sections.contact_info.map.directions.url" }}">{{ $.Param "content.sections.contact_info.map.directions.label" }}</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -76,6 +81,7 @@
 
     {{ partial "footer.html" . }}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     {{ $main := resources.Get "js/main.js" }}
     {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>

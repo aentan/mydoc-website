@@ -266,4 +266,9 @@ content:
         - logo: "/img/logos/research_logo_jmir@2x.png"
           label: "The Application of Telemedicine in Orthopedic Surgery in Singapore: A Pilot Study on a Secure, Mobile Telehealth Application and Messaging Platform"
           url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4114459/"
+    cta:
+      headline: "Ready to give your people MyDoc?"
+      btn:
+        label: "Request a demo"
+        url: "/"
 ---

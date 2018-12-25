@@ -15,19 +15,19 @@ sectionPagesMenu = "main"
     identifier = "home"
     title = "Home"
     url = "/"
-    weight = -110
+    weight = -130
   
   [[menu.main]]
     identifier = "employers"
     title = "Employers"
     url = "/employers/"
-    weight = -100
+    weight = -120
 
   [[menu.main]]
     identifier = "about"
     title = "About"
     url = "/about/"
-    weight = -100
+    weight = -110
   
   [[menu.main]]
     identifier = "blog"

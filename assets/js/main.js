@@ -1,7 +1,7 @@
 $(function() {
 
   // Contact form
-  $('.mydoc-form').submit(function(e) {
+  $('#contact-form').submit(function(e) {
     e.preventDefault();
 
     var form = $(this);

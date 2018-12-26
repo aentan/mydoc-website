@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-advice</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M15.9428013,24 L18,24 C23.5228475,24 28,19.5228475 28,14 C28,8.4771525 23.5228475,4 18,4 L14,4 C8.4771525,4 4,8.4771525 4,14 C4,18.1006381 6.46819043,21.6247994 10,23.1679126 L10,26.9961829 C10,27.2384061 10.0879182,27.4723961 10.2474233,27.6546876 C10.6111054,28.0703242 11.242868,28.1124417 11.6585046,27.7487596 L15.9428013,24 Z" id="path-1"></path>
-    </defs>
-    <g id="icon-advice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <use id="Mask" fill="#2333FF" transform="translate(16.000000, 15.998098) scale(-1, 1) translate(-16.000000, -15.998098) " xlink:href="#path-1"></use>
-    </g>
-</svg>
+<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M16.057 24H14C8.477 24 4 19.523 4 14S8.477 4 14 4h4c5.523 0 10 4.477 10 10 0 4.1-2.468 7.625-6 9.168v3.828a1 1 0 0 1-1.659.753z" fill="#2333ff" fill-rule="evenodd"/></svg>

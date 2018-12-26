@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://my-doc.com/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://my-doc.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -17,6 +21,10 @@
   
   <url>
     <loc>https://my-doc.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://my-doc.com/provider-sign-up/</loc>
   </url>
   
   <url>

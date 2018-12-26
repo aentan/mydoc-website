@@ -35,10 +35,65 @@
       <div class="container">
         <p>{{ $.Param "content.sections.logo_soup.headline" }}</p>
         <div class="logos">
-          <img class="logo" src="/svg/logos/logo-aetna.svg" alt="Aetna logo">
-          <img class="logo" src="/svg/logos/logo-aia.svg" alt="AIA logo">
-          <img class="logo" src="/svg/logos/logo-cigna.svg" alt="Cigna logo">
-          <img class="logo" src="/img/logos/logo-cxa.png" srcset="/img/logos/logo-cxa@2x.png 2x, /img/logos/logo-cxa@3x.png 3x" alt="CXA logo">
+          <img class="logo" src="/svg/logos/logo-google.svg" alt="Google logo">
+          <img class="logo" src="/svg/logos/logo-facebook.svg" alt="Facebook logo">
+          <img class="logo" src="/svg/logos/logo-bloomberg.svg" alt="Bloomberg logo">
+          <img class="logo" src="/svg/logos/logo-db-schenker.svg" alt="DB Schenker logo">
+          <img class="logo" src="/svg/logos/logo-deutsche-bank.svg" alt="Deutsche Bank logo">
+          <img class="logo" src="/svg/logos/logo-bbc.svg" alt="BBC Worldwide logo">
+          <img class="logo" src="/svg/logos/logo-ust.svg" alt="UST Global logo">
+          <img class="logo" src="/svg/logos/logo-riotinto.svg" alt="Rio Tinto logo">
+          <img class="logo" src="/svg/logos/logo-regent.svg" alt="Regent Hotels & Resorts logo">
+          <img class="logo" src="/svg/logos/logo-mbs.svg" alt="Marina Bay Sands logo">
+          <img class="logo" src="/svg/logos/logo-disney.svg" alt="Disney logo">
+          <img class="logo" src="/svg/logos/logo-cis.svg" alt="Canadian International School logo">
+          <img class="logo" src="/svg/logos/logo-novartis.svg" alt="Novartis logo">
+        </div>
+      </div>
+    </section>
+
+    <section class="key-benefits light">
+      <div class="container">
+        <h2>{{ $.Param "content.sections.key_benefits.headline" }}</h2>
+        <p>{{ $.Param "content.sections.key_benefits.subhead" }}</p>
+        <div class="row row-stretched">
+          {{ range $index, $benefit := $.Param "content.sections.key_benefits.benefits" }}
+          <div class="col col-sm-6 col-md-5">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#{{ $benefit.icon }}"></use>
+              </svg>
+            </div>
+            <h3>{{ $benefit.headline }}</h3>
+            <p>{{ $benefit.body }}</p>
+          </div>
+          {{ if modBool (add $index 1) 2 }}<div class="break"></div>{{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="plans">
+      <div class="container">
+        <h2>{{ $.Param "content.sections.plans.headline" }}</h2>
+        <p>{{ $.Param "content.sections.plans.subhead" }}</p>
+        <div class="row">
+          {{ range $plan := $.Param "content.sections.plans.plans" }}
+          <div class="col col-md-6 col-lg-4">
+            <div class="mydoc-card">
+              <h3>{{ $plan.name }}</h3>
+              <p>{{ $plan.description }}</p>
+              <ul class="plan-features">
+                {{ range $feature := $plan.features }}
+                <li>{{ $feature | safeHTML }}</li>
+                {{ end }}
+              </ul>
+              <div class="plan-cta">
+                <a href="{{ $plan.cta.url }}" class="mydoc-btn primary">{{ $plan.cta.label }}</a>
+              </div>
+            </div>
+          </div>
+          {{ end }}
         </div>
       </div>
     </section>

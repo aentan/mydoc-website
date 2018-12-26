@@ -36,3 +36,84 @@ section.employers-hero {
     background-size: 35%;
   }
 }
+
+
+// 
+// Key benefits section
+// 
+
+.key-benefits {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .feature-icon {
+    margin-bottom: 16px;
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .col {
+    margin-bottom: 16px;
+  }
+}
+
+// 
+// Plans section
+// 
+
+.plans {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .col {
+    padding-bottom: 32px;
+  }
+
+  .mydoc-card {
+    height: 100%;
+    position: relative;
+    padding-bottom: 96px;
+
+    @include media(">md") {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  .plan-features {
+    color: $color-text-dark;
+
+    li {
+      padding-left: 32px;
+      margin-bottom: 24px;
+
+      background-image: url('/svg/checkmark.svg');
+      background-repeat: no-repeat;
+      background-position: 6px 7px;
+    }
+
+    strong {
+      color: $color-text-darkest;
+    }
+  }
+
+  .plan-cta {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -279,7 +279,7 @@ content:
           label: "The Application of Telemedicine in Orthopedic Surgery in Singapore: A Pilot Study on a Secure, Mobile Telehealth Application and Messaging Platform"
           url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4114459/"
     cta:
-      headline: "Find out more."
+      headline: "Find out more"
       btn:
         label: "Request a demo"
         url: "/contact/"

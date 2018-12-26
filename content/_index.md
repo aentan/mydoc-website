@@ -260,7 +260,7 @@ content:
           who: "Asst. Pharmacy Practice Manager"
           photo: "/img/people/grace-chew"
           quote: "With MyDoc, there is a chance for customers to access pharmacist advice which is trusted. They can talk to us about their conditions privately any time 24/7. MyDoc helps us achieve the aim of reaching out to customers and being there for them to provide trusted health service."
-        - name: "Mohammad Faizal"
+        - name: "Dr. Muhammad Faizal"
           who: "Medical Director"
           photo: "/img/people/mohammad-faizal"
           quote: "One of the best things I like about it is the ability to do reviews with patients. I don’t have to wait for patients to come to my clinic. I can see them virtually within half an hour. It allows patients to have the opportunity to see a doctor on their own time. "

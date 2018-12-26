@@ -6,7 +6,7 @@
   width: 64px;
   height: 64px;
   border-radius: 32px;
-  background-color: $color-brand-llc;
+  background-color: $color-ui-white;
   color: $color-brand-primary;
   display: flex;
   justify-content: center;
@@ -15,5 +15,9 @@
   svg {
     width: 32px;
     height: 32px;
+  }
+
+  .light & {
+    background-color: $color-brand-llc;
   }
 }

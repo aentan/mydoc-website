@@ -117,3 +117,67 @@ section.employers-hero {
     text-align: center;
   }
 }
+
+
+// 
+// Guardian section
+//
+
+.guardian {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+// 
+// Virtual consults section
+// 
+
+.virtual-consults {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .feature-icon {
+    margin-bottom: 16px;
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .col {
+    margin-bottom: 16px;
+  }
+}
+
+
+// 
+// Health screening section
+// 
+
+.health-screening {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+}
+
+
+// 
+// CDM section
+// 
+
+.cdm {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+}

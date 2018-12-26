@@ -203,7 +203,7 @@
   {{ $cycle := resources.Get "js/jquery.cycle2.js" }}
   {{ $cycle_swipe := resources.Get "js/jquery.cycle2.swipe.js" }}
   {{ $main := resources.Get "js/main.js" }}
-  {{ $js := slice $cycle $cycle_swipe $main | resources.Concat "js/bundle-all.js" | resources.Minify | resources.Fingerprint }}
+  {{ $js := slice $cycle $cycle_swipe $main | resources.Concat "js/bundle-home.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
 </body>
 

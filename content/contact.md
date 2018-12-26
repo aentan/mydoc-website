@@ -5,7 +5,7 @@ content:
   sections:
     contact_info:
       headline: "Get in touch"
-      form_to: "hello@aentan.com"
+      form_to: "support@my-doc.com"
       map:
         headline: "MyDoc Pte. Ltd."
         address: "101C Telok Ayer Street<br>Singapore 068574"

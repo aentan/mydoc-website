@@ -130,6 +130,7 @@ section.home-hero {
 
   .row {
     margin-top: 48px;
+    justify-content: center;
   }
 
   .col {
@@ -138,6 +139,11 @@ section.home-hero {
     align-items: center;
     flex-direction: column;
     margin-bottom: 24px;
+
+    @include media(">lg") {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
 
     img {
       width: 80px;

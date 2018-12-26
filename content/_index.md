@@ -259,7 +259,7 @@ content:
         - name: "Grace Chew"
           who: "Asst. Pharmacy Practice Manager"
           photo: "/img/people/grace-chew"
-          quote: "With MyDoc, there is a chance for customers to access pharmacist advice which is trusted and we will be able to give them information about their condition anytime anywhere when they need it. They can talk to us about their conditions privately anytime 24/7. MyDoc helps us achieve the aim of reaching out to customers and being there for them to provide trusted health service."
+          quote: "With MyDoc, there is a chance for customers to access pharmacist advice which is trusted. They can talk to us about their conditions privately any time 24/7. MyDoc helps us achieve the aim of reaching out to customers and being there for them to provide trusted health service."
         - name: "Mohammad Faizal"
           who: "Medical Director"
           photo: "/img/people/mohammad-faizal"

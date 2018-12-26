@@ -4,15 +4,18 @@
   font-weight: $button-font-weight;
   line-height: $button-line-height;
   text-transform: $button-text-transform;
-  color: $button-color;
   padding-right: $button-padding-horizontal;
   padding-left: $button-padding-horizontal;
   padding-bottom: $button-padding-vertical;
   padding-top: $button-padding-vertical;
-  background-color: $button-bg;
   border-radius: $button-border-radius;
   letter-spacing: 0.05rem;
   border: 0;
+
+  &.primary {
+    color: $button-primary-color;
+    background-color: $button-primary-bg;
+  }
 
   &:hover {
     text-decoration: none;

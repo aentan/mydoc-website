@@ -141,7 +141,14 @@ $button-border-radius:          $base-border-radius;
 $button-box-shadow:             $base-box-shadow;
 $button-padding-horizontal:     24px;
 $button-padding-vertical:       14px;
-$button-bg:                     $color-brand-primary;
+$button-primary-color:          $color-ui-white;
+$button-primary-bg:             $color-brand-primary;
+
+$button-link-color:             $color-brand-primary;
+$button-link-bg:                $color-ui-white;
+
+$button-sm-padding-horizontal:  12px;
+$button-sm-padding-vertical:    8px;
 
 $form-control-border-radius:    $base-border-radius;
 $form-control-border:           1px solid $color-text-light;
@@ -151,9 +158,6 @@ $form-control-color:            $color-text-default;
 $form-control-bg:               $color-ui-white;
 $form-control-font-size:        $lead-font-size;
 $form-control-line-height:      $base-line-height;
-
-$button-sm-padding-horizontal:  12px;
-$button-sm-padding-vertical:    8px;
 
 $navbar-height:                 120px;
 $navbar-height-md:              80px;

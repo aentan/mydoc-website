@@ -40,8 +40,8 @@ content:
           headline: "This is title for slide 2"
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     features_benefits:
-      headline: "Features and benefits."
-      subhead: "Easily engage employees and manage their healthcare needs."
+      headline: "Comprehensive Features"
+      subhead: "Designed to enhance the way doctors care and patients receive care."
       features:
         - icon: "icon-case-note"
           headline: "Case notes"
@@ -245,31 +245,31 @@ content:
         - Warts
         - White spots
     want_to_use:
-      headline: "Healthcare people want to use."
+      headline: "Personal healthcare platform people like using."
       testimonials:
         - name: "Chia Hoe Seng"
           who: "Partnership Director"
           photo: "/img/people/chia-hoe-seng"
-          quote: "I tried MyDoc at 2am! The response was instantaneous. It is good to know to know someone is there to help me with my need anytime anywhere"
+          quote: "I tried MyDoc at 2am! The response was instantaneous even though it says it could take up to 30 minutes. To my surprise, it was immediate. It is good to know to know someone is there to help me with my need any time anywhere as long as there is mobile connectivity."
         - name: "Kaelynn Tan"
           who: "Business HR Manager"
           photo: "/img/people/kaelynn-tan"
-          quote: "I feel very safe using the application. I feel the doctor really understands. MyDoc helps me save a lot of money and I can use the service in the comfort of my home."
+          quote: "I feel very safe using the application. I feel the doctor really understands what I have been experiencing. I find it very convenient. MyDoc helps me save a lot of money and I can use the service in the comfort of my home. The user journey is very smooth and I really like it."
         - name: "Grace Chew"
           who: "Asst. Pharmacy Practice Manager"
           photo: "/img/people/grace-chew"
-          quote: "There is a chance for customers to access pharmacist advice, and we will be able to give them information about their condition when they need it."
+          quote: "With MyDoc, there is a chance for customers to access pharmacist advice which is trusted and we will be able to give them information about their condition anytime anywhere when they need it. They can talk to us about their conditions privately anytime 24/7. MyDoc helps us achieve the aim of reaching out to customers and being there for them to provide trusted health service."
         - name: "Mohammad Faizal"
           who: "Medical Director"
           photo: "/img/people/mohammad-faizal"
-          quote: "I like the ability to do reviews with patients. I don’t have to wait for patients to come to my clinic. I can see them virtually within half an hour."
+          quote: "One of the best things I like about it is the ability to do reviews with patients. I don’t have to wait for patients to come to my clinic. I can see them virtually within half an hour. It allows patients to have the opportunity to see a doctor on their own time. "
         - name: "Rosaline Chow Koo"
           who: "CEO and Founder"
           photo: "/img/people/rosaline-chow-koo"
-          quote: "We have gotten very good feedback from our clients who are using MyDoc.  It has brought down the cost of outpatient healthcare."
+          quote: "We have gotten very good feedback from our clients who are using MyDoc. We have integrated MyDoc into our platform so that after each health screening, employees can get a consultation immediately. It has brought down the cost of outpatient healthcare."
     research:
       headline: "Follow-up rates for virtual consults are nearly 6x higher, generating nearly 5x greater savings."
-      subhead: "–PwC report on Digital Health ROI, featuring MyDoc data, a first-of-its kind study in Asia."
+      subhead: "–PwC report on Digital Health ROI, featuring MyDoc."
       documents:
         - logo: "/svg/logos/research_logo_pwc.svg"
           label: "Digital health: Challenges and solutions to measuring Return on Investment (ROI)"
@@ -278,7 +278,7 @@ content:
           label: "The Application of Telemedicine in Orthopedic Surgery in Singapore: A Pilot Study on a Secure, Mobile Telehealth Application and Messaging Platform"
           url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4114459/"
     cta:
-      headline: "Ready to give your people MyDoc?"
+      headline: "Find out more."
       btn:
         label: "Request a demo"
         url: "/contact/"

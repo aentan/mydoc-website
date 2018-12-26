@@ -251,7 +251,7 @@ content:
         - name: "Chia Hoe Seng"
           who: "Partnership Director"
           photo: "/img/people/chia-hoe-seng"
-          quote: "I tried MyDoc at 2am! The response was instantaneous even though it says it could take up to 30 minutes. To my surprise, it was immediate. It is good to know to know someone is there to help me with my need any time anywhere as long as there is mobile connectivity."
+          quote: "I tried MyDoc at 2am! The response was instantaneous even though it says it could take up to 30 minutes. To my surprise, it was immediate. It is good to know someone is there to help me with my need any time anywhere as long as there is mobile connectivity."
         - name: "Kaelynn Tan"
           who: "Business HR Manager"
           photo: "/img/people/kaelynn-tan"

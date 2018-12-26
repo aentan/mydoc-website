@@ -12,25 +12,7 @@ sectionPagesMenu = "main"
 [menu]
 
   [[menu.main]]
-    identifier = "home"
-    title = "Home"
-    url = "/"
-    weight = -130
-  
-  [[menu.main]]
-    identifier = "employers"
-    title = "Employers"
-    url = "/employers/"
-    weight = -120
-
-  [[menu.main]]
-    identifier = "about"
-    title = "About"
-    url = "/about/"
-    weight = -110
-  
-  [[menu.main]]
     identifier = "blog"
     title = "Blog"
     url = "https://blog.my-doc.com/"
-    weight = -100
+    weight = 4

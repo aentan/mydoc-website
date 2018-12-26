@@ -1,6 +1,9 @@
 ---
 title: "Home"
 description: "Advancing value-based digital healthcare in Asia."
+menu:
+  main:
+    weight: 1
 content:
   sections:
     hero:
@@ -8,7 +11,7 @@ content:
       subhead: "MyDoc is changing the way physicians care and patients receive care, to help people live healthier lives and save money."
       cta:
         label: "Request a demo"
-        url: "/contact"
+        url: "/contact/"
     logo_soup:
       headline: "Backed by the largest insurers and their brokers"
     creating_value:
@@ -270,5 +273,5 @@ content:
       headline: "Ready to give your people MyDoc?"
       btn:
         label: "Request a demo"
-        url: "/"
+        url: "/contact/"
 ---

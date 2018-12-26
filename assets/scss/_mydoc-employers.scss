@@ -1,0 +1,38 @@
+//
+// Hero section
+// 
+
+section.employers-hero {
+  height: 100vh;
+  display: flex;
+  background-image: url('/img/hero-bg-wave-employers.jpg');
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  @include media("<md") {
+    padding-top: 0;
+  }
+
+  @include media("<md", "landscape") {
+    min-height: 272px;
+    background-size: 40%;
+  }
+
+  @include media(">md") {
+    height: calc(100vh - 244px);
+    min-height: 640px;
+    align-items: center;
+    background-image: url('/img/hero-bg-wave-employers@2x.jpg');
+    background-size: 60%;
+  }
+
+  @include media(">xl") {
+    background-image: url('/img/hero-bg-wave-employers@3x.jpg');
+    background-size: 50%;
+  }
+
+  @include media(">ul") {
+    background-size: 35%;
+  }
+}

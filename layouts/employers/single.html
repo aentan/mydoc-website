@@ -1,35 +1,65 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible"
-          content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>{{ .Title }} &ndash; {{ .Site.Params.title }}</title>
-    {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
-    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
-  </head>
-  <body>
 
-    {{ partial "inline-svg.html" . }}
-  
-    {{ partial "header.html" . }}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>{{ .Title }} &ndash; {{ .Site.Params.title }}</title>
+  {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+</head>
 
-    <main>
+<body>
 
-      <section>
+  {{ partial "inline-svg.html" . }}
 
-        
+  {{ partial "header.html" . }}
 
-      </section>
+  <main>
 
-    </main>
+    <section class="employers-hero light">
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-8 col-md-4 offset-md-1">
+            <h1>{{ $.Param "content.sections.hero.headline" }}</h1>
+            <p class="lead">{{ $.Param "content.sections.hero.subhead" }}</p>
+            <a href="{{ $.Param "content.sections.hero.cta_main.url" }}" class="mydoc-btn primary">{{ $.Param "content.sections.hero.cta_main.label" }}</a>
+            <a href="{{ $.Param "content.sections.hero.cta_sub.url" }}" class="mydoc-btn link">{{ $.Param "content.sections.hero.cta_sub.label" }}</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    {{ partial "footer.html" . }}
+    <section class="logo-soup">
+      <div class="container">
+        <p>{{ $.Param "content.sections.logo_soup.headline" }}</p>
+        <div class="logos">
+          <img class="logo" src="/svg/logos/logo-aetna.svg" alt="Aetna logo">
+          <img class="logo" src="/svg/logos/logo-aia.svg" alt="AIA logo">
+          <img class="logo" src="/svg/logos/logo-cigna.svg" alt="Cigna logo">
+          <img class="logo" src="/img/logos/logo-cxa.png" srcset="/img/logos/logo-cxa@2x.png 2x, /img/logos/logo-cxa@3x.png 3x" alt="CXA logo">
+        </div>
+      </div>
+    </section>
 
-    {{ $main := resources.Get "js/main.js" }}
-    {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
-    <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
-  </body>
+    <section class="cta light ">
+      <div class="container">
+        <h3>Ready to give your people MyDoc?</h3>
+        <a href="{{ $.Param "content.sections.cta.btn.url" }}" class="mydoc-btn">{{ $.Param "content.sections.cta.btn.label" }}</a>
+      </div>
+    </section>
+
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  {{ $cycle := resources.Get "js/jquery.cycle2.js" }}
+  {{ $cycle_swipe := resources.Get "js/jquery.cycle2.swipe.js" }}
+  {{ $main := resources.Get "js/main.js" }}
+  {{ $js := slice $cycle $cycle_swipe $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+</body>
+
 </html>

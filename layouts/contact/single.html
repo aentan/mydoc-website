@@ -83,7 +83,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     {{ $main := resources.Get "js/main.js" }}
-    {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+    {{ $js := slice $main | resources.Concat "js/bundle-contact.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
   </body>
 </html>

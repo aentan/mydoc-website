@@ -1,6 +1,9 @@
 ---
 title: "Contact"
+label: "Contact"
 type: "contact"
+meta:
+  description: "Contact"
 content:
   sections:
     contact_info:

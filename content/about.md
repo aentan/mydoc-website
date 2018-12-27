@@ -1,6 +1,9 @@
 ---
 title: "About"
+label: "About"
 type: "about"
+meta:
+  description: "About"
 menu:
   main:
     weight: 3

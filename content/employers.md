@@ -1,10 +1,12 @@
 ---
-title: "Employers"
+title: "Innovative Employee Healthcare Benefits"
+label: "Employers"
 type: "employers"
+meta:
+  description: "24/7/365 personal healthcare employees love at outcome-based pricing designed to reduce cost of care and improve patient engagement for better outcomes. MyDoc partners the largest insurers, employee benefits consultants and brokers, making implementation easy for employers."
 menu:
   main:
     weight: 2
-description: "Work healthcare employees and budgets love."
 content:
   sections:
     hero:
@@ -30,7 +32,7 @@ content:
           body: "Keep employees actively engaged and healthy with a simple and convenient design as proven by high employee satisfaction."
         - icon: "icon-savings"
           headline: "Save money"
-          body: "Identity problems before it is too late with continuous care. Lower hospital re-admissions with higher patient follow-"
+          body: "Identity problems before it is too late with continuous care. Lower hospital re-admissions with higher patient follow-up rates."
         - icon: "icon-connected-care"
           headline: "Connected care"
           body: "The only platform used by the largest diagnostics labs, pharmacies, leading insurers and Fortune 500 companies to provide employee care."

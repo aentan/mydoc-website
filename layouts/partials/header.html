@@ -11,7 +11,7 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="mydoc-nav-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-          <a class="mydoc-nav-link" href="{{ .URL }}">{{ .Label }}</a>
+          <a class="mydoc-nav-link" href="{{ .URL }}">{{ .Title }}</a>
         </li>
         {{ end }}
       </ul>

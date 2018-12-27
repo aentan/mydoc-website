@@ -1,6 +1,6 @@
 ---
-title: "Value-based digital health for better outcomes"
-label: "Home"
+title: "Home"
+long_title: "Value-based digital health for better outcomes"
 meta:
   description: "MyDoc enhances the patient care experience and engagement, eliminates treatment duplication and cost wastage while producing better health outcomes."
 menu:

@@ -1,6 +1,6 @@
 ---
 title: "About"
-label: "About"
+long_title: "About"
 type: "about"
 meta:
   description: "About"

@@ -1,6 +1,6 @@
 ---
-title: "Provider sign up"
-label: "Providers"
+title: "Providers"
+long_title: "Provider sign up"
 meta:
   description: "Providers"
 type: "provider-sign-up"

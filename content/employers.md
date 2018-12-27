@@ -1,6 +1,6 @@
 ---
-title: "Innovative Employee Healthcare Benefits"
-label: "Employers"
+title: "Employers"
+long_title: "Innovative Employee Healthcare Benefits"
 type: "employers"
 meta:
   description: "24/7/365 personal healthcare employees love at outcome-based pricing designed to reduce cost of care and improve patient engagement for better outcomes. MyDoc partners the largest insurers, employee benefits consultants and brokers, making implementation easy for employers."

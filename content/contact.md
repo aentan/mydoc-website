@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-label: "Contact"
+long_title: "Contact"
 type: "contact"
 meta:
   description: "Contact"

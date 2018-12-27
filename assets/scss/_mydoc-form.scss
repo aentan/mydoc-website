@@ -16,6 +16,7 @@
   textarea {
     width: 100%;
     appearance: none;
+    margin: 0;
     background-color: $form-control-bg;
     border: $form-control-border;
     border-radius: $form-control-border-radius;
@@ -27,6 +28,26 @@
     &::placeholder {
       color: $color-text-light;
     }
+  }
+}
+
+.mydoc-input-group {
+  position: relative;
+
+  &.prefixed-16 {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding-left: $form-control-padding-horizontal + 16px;
+    }
+  }
+
+  .mydoc-form-prefix {
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    padding-left: $form-control-padding-horizontal;
+    color: $color-text-dark;
   }
 }
 

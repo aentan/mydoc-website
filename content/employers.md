@@ -19,7 +19,7 @@ content:
     logo_soup:
       headline: "Leading employers use MyDoc to care for employees"
     key_benefits:
-      headline: "Key benefits of using MyDoc"
+      headline: "Key reasons why over 200 employers use MyDoc"
       subhead: "Easily engage employees and manage their healthcare needs."
       benefits:
         - icon: "icon-easy-to-use"

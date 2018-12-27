@@ -128,6 +128,7 @@ section.employers-hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 32px;
   }
 }
 
@@ -180,4 +181,28 @@ section.employers-hero {
       text-align: center;
     }
   }
+}
+
+
+// 
+// Budget section
+//
+
+.budget {
+  .d-flex-sm {
+    justify-content: center;
+  }
+}
+
+.budget-bill {
+  margin-top: 32px;
+  border: 0;
+  border-image-source: url('/img/bill-bg@2x.png');
+  border-image-slice: 160 160 60 40 fill;
+  border-image-width: 80px 80px 30px 20px;
+  border-image-outset: 0;
+  border-image-repeat: stretch stretch;
+  padding: 40px 40px;
+  min-height: 512px;
+  width: 100%;
 }

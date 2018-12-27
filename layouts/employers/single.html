@@ -57,7 +57,7 @@
     <section class="key-benefits light">
       <div class="container">
         <h2>{{ $.Param "content.sections.key_benefits.headline" }}</h2>
-        <p>{{ $.Param "content.sections.key_benefits.subhead" }}</p>
+        <!-- <p>{{ $.Param "content.sections.key_benefits.subhead" }}</p> -->
         <div class="row row-stretched">
           {{ range $index, $benefit := $.Param "content.sections.key_benefits.benefits" }}
           <div class="col col-sm-6 col-md-5">
@@ -72,6 +72,50 @@
           {{ if modBool (add $index 1) 2 }}<div class="break"></div>{{ end }}
           {{ end }}
         </div>
+      </div>
+    </section>
+
+    <section class="budget">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 offset-md-1">
+            <h2>{{ $.Param "content.sections.budget.headline" }}</h2>
+            <p class="lead">{{ $.Param "content.sections.budget.subhead" }}</p>
+            <form class="mydoc-form" id="budget-calculator" action="https://www.enformed.io/s2mazkc" method="POST">
+              <div class="mydoc-form-group">
+                <label for="employees_num">Number of employees</label>
+                <input type="text" name="employees_num" id="employees_num" placeholder="Enter 40 or more">
+              </div>
+              <div class="mydoc-form-group">
+                <label for="employees_cost">Average annual benefits cost per employee</label>
+                <div class="mydoc-input-group prefixed-16">
+                  <div class="mydoc-form-prefix">$</div>
+                  <input type="text" name="employees_cost" id="employees_cost" placeholder="Enter 200 or more">
+                </div>
+              </div>
+              <div class="mydoc-form-validation"></div>
+              <input class="mydoc-btn primary" type="submit" value="Calculate">
+            </form>
+          </div>
+          <div class="d-flex-sm col col-md-4 offset-md-1">
+            <div class="budget-bill">
+              <h3>Healthcare Bill</h3>
+              <table class="bill-table">
+                <tr>
+                  <td class="bill-key">Employee heathcare cost</td>
+                  <td class="bill-value">0</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta light ">
+      <div class="container">
+        <h3>{{ $.Param "content.sections.cta.headline" }}</h3>
+        <a href="{{ $.Param "content.sections.cta.btn.url" }}" class="mydoc-btn primary">{{ $.Param "content.sections.cta.btn.label" }}</a>
       </div>
     </section>
 
@@ -100,7 +144,7 @@
       </div>
     </section>
 
-    <section class="guardian light">
+    <!-- <section class="guardian light">
       <div class="container">
         <div class="row">
           <div class="logo col col-md-5 offset-md-1">
@@ -123,9 +167,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="virtual-consults">
+    <!-- <section class="virtual-consults">
       <div class="container">
         <h2>{{ $.Param "content.sections.virtual_consults.headline" }}</h2>
         <p class="lead">{{ $.Param "content.sections.virtual_consults.subhead" }}</p>
@@ -158,40 +202,12 @@
         <h2>{{ $.Param "content.sections.cdm.headline" }}</h2>
         <p class="lead">{{ $.Param "content.sections.cdm.subhead" }}</p>
       </div>
-    </section>
+    </section> -->
 
     <section class="cta light ">
       <div class="container">
         <h3>{{ $.Param "content.sections.cta.headline" }}</h3>
         <a href="{{ $.Param "content.sections.cta.btn.url" }}" class="mydoc-btn primary">{{ $.Param "content.sections.cta.btn.label" }}</a>
-      </div>
-    </section>
-
-    <section class="budget light">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md-5 offset-md-1">
-            <h2>{{ $.Param "content.sections.budget.headline" }}</h2>
-            <p class="lead">{{ $.Param "content.sections.budget.subhead" }}</p>
-            <form class="mydoc-form" id="budget-calculator" action="https://www.enformed.io/s2mazkc" method="POST">
-              <div class="mydoc-form-group">
-                <label for="employees_num">Number of employees</label>
-                <input type="text" name="employees_num" id="employees_num" placeholder="Enter 40 or more">
-              </div>
-              <div class="mydoc-form-group">
-                <label for="employees_cost">Average annual benefits cost per employee</label>
-                <input type="text" name="employees_cost" id="employees_cost" placeholder="Enter 200 or more">
-              </div>
-              <div class="mydoc-form-validation"></div>
-              <input class="mydoc-btn primary" type="submit" value="Calculate">
-            </form>
-          </div>
-          <div class="logo col col-md-5">
-            <div class="budget-bill">
-
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 

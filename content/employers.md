@@ -10,20 +10,19 @@ menu:
 content:
   sections:
     hero:
-      headline: "Work healthcare employees and budgets love."
-      subhead: "MyDoc CARE team available 24/7 to care for your employees and save you cost."
+      headline: "Healthcare employees love and HR finds easy to implement"
+      subhead: "Next-gen healthcare designed to care for employees 24/7/365 and reduce healthcare expenses."
       cta_main:
         label: "Request a demo"
         url: "/contact/"
       cta_sub:
         label: "View case study"
         url: "/case-sttudy/"
-    logo_soup:
-      headline: "Leading employers use MyDoc to care for employees"
-    key_benefits:
+    # logo_soup:
+    #   headline: "Leading employers use MyDoc to care for employees"
+    key_reasons:
       headline: "Key reasons why over 200 employers use MyDoc"
-      subhead: "Easily engage employees and manage their healthcare needs."
-      benefits:
+      reasons:
         - icon: "icon-easy-to-use"
           headline: "Easy to use"
           body: "Simple product design that requires minimal training, set up and implementation overheads, for copmpanies of any size."
@@ -36,6 +35,28 @@ content:
         - icon: "icon-connected-care"
           headline: "Connected care"
           body: "The only platform used by the largest diagnostics labs, pharmacies, leading insurers and Fortune 500 companies to provide employee care."
+    saving_time:
+      headline: "Employees enjoy saving time and receiving personal care and attention"
+      stats:
+        - figure: "3 hours"
+          caption: "Average hours saved by 85% of employees"
+        - figure: "85%"
+          caption: "Of employees saved an average of 3 hours"
+        - figure: "93%"
+          caption: "Likely or very likely to use the service again"
+      testimonials:
+        - name: "Karmila Salim"
+          quote: "It’s really helpful for people like me who self medicate."
+        - name: "Albert Bautista"
+          quote: "Great and fast service reply even as early as 4am!"
+        - name: "Lisa Neo"
+          quote: "Really like this service. I had been able to avoid wasted trips. And get advice almost like F2F. It's convenient & time-saving. Thanks."
+        - name: "Shi Min Koo"
+          quote: "It’s a really pleasant service. The pharmacist I spoke to was very helpful and assisted in helping my mother with a prescription and even reserving the medication for me. Thank you so much!"
+        - name: "Carly Zimmer"
+          quote: "I was not able to leave the house due to embarrassing and uncomfortable symptoms. This service enabled me to speak to a doctor via video call and then receive my medicine a couple of hours later. I was also able to obtain a medical certificate. Thank you."
+        - name: "Bianca Comfort"
+          quote: "This service is excellent! I have used it several times, to speak to a doctor or pharmacist. It saves so much time for simple questions! Thank you for providing this service!"
     plans:
       headline: "Plans to fit any business"
       subhead: "One platform for comprehensive and personalised employee healthcare."

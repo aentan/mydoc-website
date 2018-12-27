@@ -1,0 +1,21 @@
+//
+// Stat stack
+//
+
+.stat-stack {
+  margin-bottom: 32px;
+  text-align: center;
+
+  .stat-figure {
+    display: block;
+    font-size: $stat-figure-font-size;
+    font-weight: $stat-figure-font-weight;
+    line-height: $stat-figure-line-height;
+    color: $stat-figure-color;
+  }
+
+  .stat-caption {
+    display: block;
+    color: $color-text-dark;
+  }
+}

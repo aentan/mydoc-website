@@ -39,10 +39,10 @@ section.employers-hero {
 
 
 // 
-// Key benefits section
+// Key reasons section
 // 
 
-.key-benefits {
+.key-reasons {
   .container > {
     h2, p {
       text-align: center;
@@ -61,6 +61,41 @@ section.employers-hero {
     margin-bottom: 16px;
   }
 }
+
+
+// 
+// Saving time section
+// 
+
+.saving-time {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .container > .row {
+    margin-top: 48px;
+  }
+
+  .stats {
+    margin-bottom: 32px;
+  }
+
+  .testimonial {
+    margin-bottom: 32px;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .stat-caption {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
 
 // 
 // Plans section

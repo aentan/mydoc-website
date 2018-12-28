@@ -98,6 +98,30 @@ section.employers-hero {
 
 
 // 
+// Budget section
+//
+
+.budget {
+  .d-flex-sm {
+    justify-content: center;
+  }
+}
+
+.budget-bill {
+  margin-top: 32px;
+  border: 0;
+  border-image-source: url('/img/bill-bg@2x.png');
+  border-image-slice: 160 160 60 40 fill;
+  border-image-width: 80px 80px 30px 20px;
+  border-image-outset: 0;
+  border-image-repeat: stretch stretch;
+  padding: 40px 40px;
+  min-height: 512px;
+  width: 100%;
+}
+
+
+// 
 // Plans section
 // 
 
@@ -155,42 +179,66 @@ section.employers-hero {
 
 
 // 
+// Single gateway section
+//
+
+.single-gateway {
+  .col {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    svg, img {
+      margin: 16px;
+    }
+  }
+}
+
+
+// 
 // Guardian section
 //
 
-.guardian {
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 32px;
-  }
-}
+// .guardian {
+//   .logo {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding-bottom: 32px;
+//   }
+// }
 
 
 // 
 // Virtual consults section
 // 
 
-.virtual-consults {
-  .container > {
-    h2, p {
-      text-align: center;
-    }
-  }
+// .virtual-consults {
+//   .container > {
+//     h2, p {
+//       text-align: center;
+//     }
+//   }
 
-  .feature-icon {
-    margin-bottom: 16px;
-  }
+//   .feature-icon {
+//     margin-bottom: 16px;
+//   }
 
-  .row {
-    margin-top: 48px;
-  }
+//   .row {
+//     margin-top: 48px;
+//   }
 
-  .col {
-    margin-bottom: 16px;
-  }
-}
+//   .col {
+//     margin-bottom: 16px;
+//   }
+// }
 
 
 // 
@@ -203,6 +251,67 @@ section.employers-hero {
       text-align: center;
     }
   }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .steps {
+    align-items: center;
+  }
+
+  .step-arrow {
+    width: 32px;
+    height: 32px;
+    color: $color-text-action;
+    margin-bottom: 32px;
+    margin-left: 32px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include media(">md") {
+      transform: rotate(-90deg);
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+  }
+
+  .included {
+    .col {
+      margin-bottom: 24px;
+    }
+    .mydoc-card {
+      padding: 16px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      .caption {
+        font-size: $small-font-size;
+        color: $color-text-medium;
+        max-width: 112px;
+        text-align: right;
+      }
+    }
+
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
@@ -210,34 +319,166 @@ section.employers-hero {
 // CDM section
 // 
 
-.cdm {
+// .cdm {
+//   .container > {
+//     h2, p {
+//       text-align: center;
+//     }
+//   }
+// }
+
+
+// 
+// Catch illnesses section
+// 
+
+.catch-illnesses {
   .container > {
     h2, p {
       text-align: center;
     }
   }
-}
 
-
-// 
-// Budget section
-//
-
-.budget {
-  .d-flex-sm {
+  .pathways {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pathway-icon {
+    width: 48px;
+    height: 48px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: $color-text-action;
+
+    &.pink {
+      color: $color-pathway-pink;
+    }
+
+    &.green {
+      color: $color-pathway-green;
+    }
+  }
+
+  .step-arrows,
+  .split-arrows {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+
+    @include media(">lg") {
+      margin-left: 24px;
+      margin-right: 24px;
+      height: 176px;
+      width: 32px;
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
+  }
+
+  .step-arrows {
+    @include media(">lg") {
+      align-items: center;
+      align-content: space-between;
+    }
+  }
+
+  .split-arrows {
+    .step-arrow:first-child {
+      margin-right: -32px;
+      transform: rotate(30deg);
+
+      @include media(">lg") {
+        margin: 0;
+        transform: rotate(-120deg);
+      }
+    }
+
+    .step-arrow:last-child {
+      margin-left: -32px;
+      transform: rotate(-30deg);
+
+      @include media(">lg") {
+        margin: 0;
+        transform: rotate(-60deg);
+      }
+    }
+  }
+
+  .step-arrow {
+    width: 48px;
+    height: 48px;
+    color: $color-text-action;
+    padding: 8px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include media(">lg") {
+      transform: rotate(-90deg);
+    }
+  }
+
+  [class^="part-"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include media(">lg") {
+      width: auto;
+    }
+  }
+
+  .part-3,
+  .part-4 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include media(">lg") {
+    .part-1 {
+      width: 128px;
+    }
+
+    .part-2 {
+      width: 192px;
+    }
+
+    .part-3 {
+      width: 64px;
+      height: 176px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+  }
+
+  .part-4 {
+    .group {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include media(">lg") {
+      width: 192px;
+      height: 176px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+
+      .group {
+        width: 192px;
+        display: flex;
+      }
+    }
   }
 }
 
-.budget-bill {
-  margin-top: 32px;
-  border: 0;
-  border-image-source: url('/img/bill-bg@2x.png');
-  border-image-slice: 160 160 60 40 fill;
-  border-image-width: 80px 80px 30px 20px;
-  border-image-outset: 0;
-  border-image-repeat: stretch stretch;
-  padding: 40px 40px;
-  min-height: 512px;
-  width: 100%;
-}

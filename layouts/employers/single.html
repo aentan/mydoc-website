@@ -171,6 +171,31 @@
       </div>
     </section>
 
+    <section class="single-gateway light">
+      <div class="container">
+        <div class="row">
+          <div class="logos col col-md-5 offset-md-1">
+            <img src="/svg/logos/logo-guardian.svg" alt="Guardian logo">
+            <img src="/svg/logos/logo-ihp.svg" alt="IHP logo">
+            <img src="/svg/logos/logo-fullerton.svg" alt="Fullerton Health logo">
+            <img src="/img/logos/logo-innovative.png" srcset="/img/logos/logo-innovative.png 1x, /img/logos/logo-innovative@2x.png 2x, /img/logos/logo-innovative@3x.png 3x" alt="Innovative Dignostics logo">
+            <img src="/img/logos/logo-clinipath.png" srcset="/img/logos/logo-clinipath.png 1x, /img/logos/logo-clinipath@2x.png 2x, /img/logos/logo-clinipath@3x.png 3x" alt="Clinipath logo">
+            <img src="/img/logos/logo-mhc.png" srcset="/img/logos/logo-mhc.png 1x, /img/logos/logo-mhc@2x.png 2x, /img/logos/logo-mhc@3x.png 3x" alt="MHC logo">
+            <img src="/svg/logos/logo-gribbles.svg" alt="Gribbles logo">
+            <img src="/img/logos/logo-acumed.png" srcset="/img/logos/logo-acumed.png 1x, /img/logos/logo-acumed@2x.png 2x, /img/logos/logo-acumed@3x.png 3x" alt="Acumed logo">
+            <img src="/svg/logos/logo-human.svg" alt="Human Health logo">
+            <img src="/img/logos/logo-acumed.png" srcset="/img/logos/logo-quest.png 1x, /img/logos/logo-quest@2x.png 2x, /img/logos/logo-quest@3x.png 3x" alt="Quest Laboratories logo">
+            <img src="/svg/logos/logo-cossb.svg" alt="COSSB logo">
+            <img src="/svg/logos/logo-omron.svg" alt="Omron logo">
+          </div>
+          <div class="col col-md-4 offset-md-1">
+            <h2>{{ $.Param "content.sections.single_gateway.headline" }}</h2>
+            <p class="lead">{{ $.Param "content.sections.single_gateway.subhead" }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <section class="guardian light">
       <div class="container">
         <div class="row">
@@ -195,6 +220,187 @@
         </div>
       </div>
     </section> -->
+
+    <section class="health-screening">
+      <div class="container">
+        <h2>{{ $.Param "content.sections.health_screening.headline" }}</h2>
+        <p>{{ $.Param "content.sections.health_screening.subhead" }}</p>
+        <div class="steps row row-stretched">
+          <div class="col col-md-3">
+            <h3>{{ $.Param "content.sections.health_screening.steps.step_1.headline" }}</h3>
+            <p>{{ $.Param "content.sections.health_screening.steps.step_1.body" }}</p>
+          </div>
+          <div class="step-arrow">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#icon-step-arrow"></use>
+            </svg>
+          </div>
+          <div class="col col-md-3">
+            <h3>{{ $.Param "content.sections.health_screening.steps.step_2.headline" }}</h3>
+            <p>{{ $.Param "content.sections.health_screening.steps.step_2.body" }}</p>
+          </div>
+          <div class="step-arrow">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#icon-step-arrow"></use>
+            </svg>
+          </div>
+          <div class="col col-md-3">
+            <h3>{{ $.Param "content.sections.health_screening.steps.step_3.headline" }}</h3>
+            <p>{{ $.Param "content.sections.health_screening.steps.step_3.body" }}</p>
+          </div>
+        </div>
+        <div class="included row">
+          {{ range $index, $item := $.Param "content.sections.health_screening.included" }}
+          <div class="col col-6 col-md-3">
+            <div class="mydoc-card">
+              <div class="header">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 32 32">
+                    <use xlink:href="#{{ $item.icon }}"></use>
+                  </svg>
+                </div>
+                {{ with $item.caption }}
+                <div class="caption">{{ . }}</div>
+                {{ end }}
+              </div>
+              <h4>{{ $item.title }}</h4>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="row">
+          <div class="col col-md-5 offset-md-1">
+            <p>{{ $.Param "content.sections.health_screening.free_for" }}</p>
+          </div>
+          <div class="col col-md-5">
+            <p>{{ $.Param "content.sections.health_screening.upgrades" | safeHTML }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta light">
+      <div class="container">
+        <a href="{{ $.Param "content.sections.health_screening.cta.btn.url" }}" class="mydoc-btn primary">{{ $.Param "content.sections.health_screening.cta.btn.label" }}</a>
+      </div>
+    </section>
+
+    <section class="catch-illnesses">
+      <div class="container">
+        <h2>{{ $.Param "content.sections.catch_illnesses.headline" }}</h2>
+        <p class="lead">{{ $.Param "content.sections.catch_illnesses.subhead" }}</p>
+        <div class="pathways">
+          <div class="part-1">
+            <div class="pathway-icon green">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-person"></use>
+              </svg>
+            </div>
+            <div class="pathway-icon pink">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="step-arrows">
+            <div class="step-arrow">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-step-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="part-2">
+            <div class="pathway-icon">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-lab"></use>
+              </svg>
+            </div>
+            <div class="pathway-icon">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-blood-pressure"></use>
+              </svg>
+            </div>
+            <div class="pathway-icon">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-tracking"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="split-arrows">
+            <div class="step-arrow">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-step-arrow"></use>
+              </svg>
+            </div>
+            <div class="step-arrow">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-step-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="part-3">
+            <div class="pathway-icon green">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-health-data"></use>
+              </svg>
+            </div>
+            <div class="pathway-icon pink">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-health-data"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="step-arrows">
+            <div class="step-arrow">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-step-arrow"></use>
+              </svg>
+            </div>
+            <div class="step-arrow">
+              <svg viewBox="0 0 32 32">
+                <use xlink:href="#icon-step-arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="part-4">
+            <div class="group">
+              <div class="pathway-icon green">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-referral"></use>
+                </svg>
+              </div>
+              <div class="pathway-icon green">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-pill-box"></use>
+                </svg>
+              </div>
+              <div class="pathway-icon green">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-nutrition"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="group">
+              <div class="pathway-icon pink">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-meds"></use>
+                </svg>
+              </div>
+              <div class="pathway-icon pink">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-blood-sugar"></use>
+                </svg>
+              </div>
+              <div class="pathway-icon pink">
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="#icon-fitness"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- <section class="virtual-consults">
       <div class="container">

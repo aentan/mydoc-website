@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ $.Param "meta.description" }}">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>{{ $.Param "long_title" }} &ndash; {{ .Site.Params.title }}</title>
+    {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+  </head>
+  <body>
+  
+    {{ partial "header.html" . }}
+
+    <main>
+
+      <section class="news-hero light">
+        <div class="container">
+          <h1>{{ $.Param "content.sections.hero.headline" }}</h1>
+          <p>{{ $.Param "content.sections.hero.subhead" | safeHTML }}</p>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="row">
+          {{ range $year := $.Param "content.sections.news" }}
+            <h2>{{ $year.year }}</h2>
+            {{ range $news := $year.news }}
+            <div class="col col-md-4">
+              <div class="mydoc-card">
+                <div class="source">
+                  <p>{{ $news.source }}</p>
+                  <p>{{ $news.date }}</p>
+                </div>
+                <h3>{{ $news.title }}</h3>
+              </div>
+            </div>
+            {{ end }}
+          {{ end }}
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    {{ $cycle := resources.Get "js/jquery.cycle2.js" }}
+    {{ $cycle_swipe := resources.Get "js/jquery.cycle2.swipe.js" }}
+    {{ $main := resources.Get "js/main.js" }}
+    {{ $js := slice $cycle $cycle_swipe $main | resources.Concat "js/bundle-all.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+  </body>
+</html>

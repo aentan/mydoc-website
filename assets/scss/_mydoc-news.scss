@@ -1,0 +1,51 @@
+// 
+// News
+//
+
+section.news-hero {
+  height: 480px;
+  min-height: 480px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    h1 {
+      width: 100%;
+    }
+  }
+}
+
+.news {
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .mydoc-card {
+    height: 256px;
+    margin-bottom: 24px;
+
+    .source {
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: $color-text-dark;
+        margin-bottom: 0;
+      }      
+    }
+  }
+}

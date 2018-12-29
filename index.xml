@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>News</title>
+      <link>https://my-doc.com/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://my-doc.com/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Providers</title>
       <link>https://my-doc.com/provider-sign-up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

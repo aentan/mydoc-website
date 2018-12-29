@@ -17,13 +17,127 @@
 
     <main>
 
-      <section class="light">
+      <section class="about-hero light">
         <div class="container">
-          <h1>{{ $.Param "content.headline" }}</h1>
-          <p class="lead">{{ $.Param "content.subhead" }}</p>
+          <h1>{{ $.Param "content.sections.hero.headline" | safeHTML }}</h1>
+        </div>
+      </section>
 
-          // Embed code here
+      <section class="what-we-do">
+        <div class="container">
+          <h2>{{ $.Param "content.sections.what_we_do.headline" }}</h2>
+          <div class="row">
+            <div class="col col-md-5 offset-md-1">
+              {{ $.Param "content.sections.what_we_do.body_1" | safeHTML }}
+            </div>
+            <div class="col col-md-4 offset-md-1">
+              <img src="{{ $.Param "content.sections.what_we_do.image_1" }}.jpg" srcset="{{ $.Param "content.sections.what_we_do.image_1" }}.jpg 1x, {{ $.Param "content.sections.what_we_do.image_1" }}@2x.jpg 2x, {{ $.Param "content.sections.what_we_do.image_1" }}@3x.jpg 3x" alt="MyDoc at Google">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-4 offset-md-1">
+              <img src="{{ $.Param "content.sections.what_we_do.image_2" }}.jpg" srcset="{{ $.Param "content.sections.what_we_do.image_2" }}.jpg 1x, {{ $.Param "content.sections.what_we_do.image_2" }}@2x.jpg 2x, {{ $.Param "content.sections.what_we_do.image_2" }}@3x.jpg 3x"
+                alt="MyDoc engineering team">
+            </div>
+            <div class="col col-md-5 offset-md-1">
+              {{ $.Param "content.sections.what_we_do.body_2" | safeHTML }}
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="how-we-do-it light">
+        <div class="container">
+          <h2>{{ $.Param "content.sections.how_we_do_it.headline" }}</h2>
+          <div class="row row-stretched">
+            {{ range $index, $step := $.Param "content.sections.how_we_do_it.steps" }}
+              <div class="col col-md-3">
+                <div class="step">
+                  <div class="step-number">{{ add $index 1 }}</div>
+                  <div class="step-body">
+                    {{ $step.step }}
+                  </div>
+                </div>
+              </div>
+              {{ if modBool (add $index 1) 3 }}<div class="break"></div>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="founded-by">
+        <div class="container">
+          <h2>{{ $.Param "content.sections.founded_by.headline" }}</h2>
+          <div class="row">
+            <div class="col col-md-4 offset-md-1">
+              <img src="{{ $.Param "content.sections.founded_by.founders.snehal.photo" }}.jpg" srcset="{{ $.Param "content.sections.founded_by.founders.snehal.photo" }}.jpg 1x, {{ $.Param "content.sections.founded_by.founders.snehal.photo" }}@2x.jpg 2x, {{ $.Param "content.sections.founded_by.founders.snehal.photo" }}@3x.jpg 3x"
+                alt="{{ $.Param "content.sections.founded_by.founders.snehal.name" }}">
+            </div>
+            <div class="col col-md-5 offset-md-1">
+              <h3>{{ $.Param "content.sections.founded_by.founders.snehal.name" }}</h3>
+              <p>{{ $.Param "content.sections.founded_by.founders.snehal.who" }}</p>
+              <p>{{ $.Param "content.sections.founded_by.founders.snehal.body" }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-5 offset-md-1">
+              <h3>{{ $.Param "content.sections.founded_by.founders.vas.name" }}</h3>
+              <p>{{ $.Param "content.sections.founded_by.founders.vas.who" }}</p>
+              <p>{{ $.Param "content.sections.founded_by.founders.vas.body" }}</p>
+            </div>
+            <div class="col col-md-4 offset-md-1">
+              <img src="{{ $.Param "content.sections.founded_by.founders.vas.photo" }}.jpg" srcset="{{ $.Param "content.sections.founded_by.founders.vas.photo" }}.jpg 1x, {{ $.Param "content.sections.founded_by.founders.vas.photo" }}@2x.jpg 2x, {{ $.Param "content.sections.founded_by.founders.vas.photo" }}@3x.jpg 3x"
+                alt="{{ $.Param "content.sections.founded_by.founders.vas.name" }}">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="the-team light">
+        <div class="container">
+          <h2>{{ $.Param "content.sections.the_team.headline" }}</h2>
+          <div class="row">
+            {{ range $index, $member := $.Param "content.sections.the_team.team_members" }}
+              <div class="team-member col col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="photo">
+                  <img src="{{ $member.photo }}.jpg" srcset="{{ $member.photo }}.jpg 1x, {{ $member.photo }}@2x.jpg 2x, {{ $member.photo }}@3x.jpg 3x" alt="{{ $member.name }}">
+                </div>
+                <h4>{{ $member.name }}</h4>
+                <p>{{ $member.who }}</p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="leading">
+        <div class="container">
+          <h2>{{ $.Param "content.sections.leading.headline" }}</h2>
+          <div class="mydoc-timeline">
+          {{ $scratch := newScratch }}
+          {{ $scratch.Set "count" 1 }}
+          {{ range $year := $.Param "content.sections.leading.timeline" }}
+            <div class="marker">{{ $year.year }}</div>
+            {{ range $index, $event := $year.events }}
+            <div class="event{{ cond (modBool ($scratch.Get "count") 2) " even" " odd" }}">
+              <div class="mydoc-card">
+                <h3>{{ $event.title }}</h3>
+                <p>{{ $event.body }}</p>
+              </div>
+            </div>
+            {{ $scratch.Add "count" 1 }}
+            {{ end }}
+          {{ end }}
+            <div class="track"></div>
+            <div class="end"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta light ">
+        <div class="container">
+          <h3>{{ $.Param "content.sections.cta.headline" }}</h3>
+          <a href="{{ $.Param "content.sections.cta.btn.url" }}" class="mydoc-btn primary">{{ $.Param "content.sections.cta.btn.label" }}</a>
         </div>
       </section>
 

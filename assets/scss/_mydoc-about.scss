@@ -1,0 +1,172 @@
+// 
+// About us
+//
+
+section.about-hero {
+  height: 480px;
+  min-height: 480px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+// 
+// What we do section
+// 
+
+.what-we-do {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 48px;
+    align-items: center;
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+
+// 
+// How we do it section
+// 
+
+.how-we-do-it {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 16px;
+  }
+
+  .step {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .step-number {
+    width: 48px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight;
+    line-height: $h2-line-height;
+    color: $color-text-action;
+  }
+
+  .step-body {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bold;
+    line-height: $h2-line-height;
+  }
+}
+
+
+// 
+// Founders section
+// 
+
+.founded-by {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 48px;
+    align-items: center;
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+
+  h3 + p {
+    color: $color-text-dark;
+    margin-top: -8px;
+  }
+}
+
+
+// 
+// Team section
+// 
+
+.the-team {
+  .container > {
+    h2, p {
+      text-align: center;
+    }
+  }
+
+  .row {
+    margin-top: 48px;
+  }
+
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+
+    .photo {
+      width: 128px;
+      height: 128px;
+      margin-bottom: 24px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+
+    h4 {
+      margin-bottom: 16px;
+
+      + p {
+        color: $color-text-dark;
+        margin-top: -8px;
+      }
+    }
+  }
+}
+
+
+// 
+// Leading... section
+// 
+
+.leading {
+  .container {
+    h2 {
+      @include media(">md") {
+        width: 320px;
+      }
+    }
+  }
+
+  .mydoc-timeline {
+    margin-top: 32px;
+
+    @include media(">md") {
+      margin-top: -48px;
+    }
+  }
+}

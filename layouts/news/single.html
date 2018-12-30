@@ -29,13 +29,13 @@
             <h2>{{ $year.year }}</h2>
             {{ range $news := $year.news }}
             <div class="col col-md-4">
-              <div class="mydoc-card">
+              <a href="{{ $news.url }}" target="_blank" rel="external" class="mydoc-card">
                 <div class="source">
                   <p>{{ $news.source }}</p>
                   <p>{{ $news.date }}</p>
                 </div>
                 <h3>{{ $news.title }}</h3>
-              </div>
+              </a>
             </div>
             {{ end }}
           {{ end }}

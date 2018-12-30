@@ -119,7 +119,7 @@ On occasion, we include links to third parties on this Website. When we provide 
 
 Except as described in this Privacy Policy, MyDoc will not use personal and/or health information which identifies you without your written authorization. We work to ensure that Personal Data is accurate, complete and reliable for its intended use. If you do authorize MyDoc to use or disclose your personal and/or health information for another purpose, you may revoke your authorization in writing at any time. You are entitled to access your Personal Data at any time by requesting for the same in writing. As costs are incurred by MyDoc in recovering the Personal Data, MyDoc reserves the right to charge a nominal fee for the recovery of Personal Data requested. You have the right to request that MyDoc amends your personal and/or health information that you believe is incomplete or incorrect. You must make a request to amend in writing. We may deny the request if we do not have the information or did not create the information.
 
-## Questions Complaints And Contacts
+## Questions, Complaints And Contacts
 
 If you have any questions about this Privacy Statement, our policies and practices, your rights under this statement, your dealings with MyDoc, or require access or corrections to your Personal Data, send an email to [support@my-doc.com](mailto:support@my-doc.com) or by mail to the address below:
 

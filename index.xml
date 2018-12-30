@@ -48,12 +48,32 @@
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>https://my-doc.com/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://my-doc.com/privacy-policy/</guid>
+      <description>Privacy Policy The Privacy Policy was updated on 10 September 2018. Please review to note the changes.
+We, MyDoc Pte. Ltd., its subsidiaries, branches, controlled entities and affiliates (“MyDoc”, “we”, “ours”, “us”), welcome persons who access and/or register on our website and service (“you”, “your”) to our service (including all forms of access – website, apps, etc.) (the “Website”). We ask that you review this privacy policy, which is intended to constitute a binding agreement that governs how we use your Personal Data (“Privacy Policy”).</description>
+    </item>
+    
+    <item>
       <title>Providers</title>
       <link>https://my-doc.com/provider-sign-up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://my-doc.com/provider-sign-up/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Terms and Conditions</title>
+      <link>https://my-doc.com/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://my-doc.com/terms-and-conditions/</guid>
+      <description>Terms and Conditions The Terms and Conditions was updated on 10 September 2018. Please review to note the changes.
+We, MyDoc Pte. Ltd., its subsidiaries, branches, and controlled entities (“MyDoc”, “we”, “our”, “us”), welcome persons who access and/or register on our website and service (“you”, “your”) to our service (including all forms of access – website, apps, etc.) (the “Website”). We ask that you review these terms and conditions, which are intended to constitute a binding agreement that governs your use of this Website (“Terms And Conditions of Use”).</description>
     </item>
     
   </channel>

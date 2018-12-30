@@ -15,10 +15,9 @@
 
     <main>
 
-      <section class="light">
+      <section class="content light">
         <div class="container">
-          <h1>{{ $.Param "content.sections.hero.headline" }}</h1>
-          <p>{{ $.Param "content.sections.hero.subhead" | safeHTML }}</p>
+          {{ .Content }}
         </div>
       </section>
 

@@ -7,7 +7,8 @@ copyright = "All Rights Reserved"
 [params]
   title = "MyDoc"
 
-sectionPagesMenu = "main"
+[blackfriday]
+    extensions = ["hardLineBreak"]
 
 [menu]
 

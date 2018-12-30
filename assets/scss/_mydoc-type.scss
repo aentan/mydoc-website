@@ -57,3 +57,27 @@ small, .small {
   font-weight: $small-font-weight;
   margin-bottom: $small-margin-bottom;
 }
+
+
+//
+// Lists
+//
+
+ul, ol {
+  margin-bottom: $base-margin-bottom;
+  list-style-position: outside;
+  padding-left: 2em;
+
+  li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}

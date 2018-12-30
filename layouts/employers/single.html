@@ -449,9 +449,8 @@
   {{ partial "footer.html" . }}
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  {{ $lity := resources.Get "js/lity.js" }}
   {{ $main := resources.Get "js/main.js" }}
-  {{ $js := slice $lity $main | resources.Concat "js/bundle-employers.js" | resources.Minify | resources.Fingerprint }}
+  {{ $js := slice $lity $main | resources.Concat "js/bundle-default-single.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
 </body>
 

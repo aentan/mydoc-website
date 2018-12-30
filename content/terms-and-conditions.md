@@ -139,7 +139,7 @@ If any portion of the Terms And Conditions of Use is ruled invalid or otherwise 
 
 ## Questions, Complaints And Contacts
 
-If you have any questions about the Terms And Conditions of Use, our policies and practices, your rights under this statement, and your dealings with MyDoc, send an email to support@my-doc.com or by mail to the address below:
+If you have any questions about the Terms And Conditions of Use, our policies and practices, your rights under this statement, and your dealings with MyDoc, send an email to [support@my-doc.com](mailto:support@my-doc.com) or by mail to the address below:
 
 **Data Protection Officer**
 MyDoc Pte Ltd

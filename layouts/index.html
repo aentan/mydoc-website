@@ -75,30 +75,20 @@
                 data-cycle-next=".mydoc-slider-nav.next"
                 data-cycle-pager=".mydoc-slider-pager"
                 data-cycle-swipe="true">
+            {{ range $slide := $.Param "content.sections.one_platform.slides" }}
             <div class="mydoc-slide">
               <div class="row">
                 <div class="slide-screenshot col col-md-3 offset-md-1">
-                  <img src="/img/screenshot-phone-container.png" srcset="/img/screenshot-phone-container@2x.png 2x, /img/screenshot-phone-container@3x.png 3x"
-                    alt="screenshot">
+                  <img src="{{ $slide.screenshot }}.png" srcset="{{ $slide.screenshot }}@2x.png 2x, {{ $slide.screenshot }}@3x.png 3x"
+                    alt="{{ $slide.headline }}">
                 </div>
                 <div class="slide-content col col-md-4 offset-md-1">
-                  <h3>{{ $.Param "content.sections.one_platform.slides.slide_1.headline" }}</h3>
-                  <p>{{ $.Param "content.sections.one_platform.slides.slide_1.body" }}</p>
+                  <h3>{{ $slide.headline }}</h3>
+                  <p>{{ $slide.body }}</p>
                 </div>
               </div>
             </div>
-            <div class="mydoc-slide">
-              <div class="row">
-                <div class="slide-screenshot col col-md-3 offset-md-1">
-                  <img src="/img/screenshot-phone-container.png" srcset="/img/screenshot-phone-container@2x.png 2x, /img/screenshot-phone-container@3x.png 3x"
-                    alt="screenshot">
-                </div>
-                <div class="slide-content col col-md-4 offset-md-1">
-                  <h3>{{ $.Param "content.sections.one_platform.slides.slide_2.headline" }}</h3>
-                  <p>{{ $.Param "content.sections.one_platform.slides.slide_2.body" }}</p>
-                </div>
-              </div>
-            </div>
+            {{ end }}
           </div>
           <div class="mydoc-slider-pager"></div>
           <a href="#" class="mydoc-slider-nav prev">

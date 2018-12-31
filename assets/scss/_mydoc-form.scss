@@ -13,7 +13,9 @@
 
   input[type="text"],
   input[type="email"],
-  textarea {
+  input[type="number"],
+  textarea,
+  select {
     width: 100%;
     appearance: none;
     margin: 0;
@@ -29,6 +31,19 @@
       color: $color-text-light;
     }
   }
+
+  select {
+    color: $color-text-medium;
+    position: relative;
+
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTEgMTQgNSA1IDUtNXoiIGZpbGw9IiMyMzMzZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) 50%;
+
+    option {
+      font-size: $small-font-size;
+    }
+  }
 }
 
 .mydoc-input-group {
@@ -39,6 +54,14 @@
     input[type="email"],
     textarea {
       padding-left: $form-control-padding-horizontal + 16px;
+    }
+  }
+
+  &.prefixed-40 {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding-left: $form-control-padding-horizontal + 40px;
     }
   }
 

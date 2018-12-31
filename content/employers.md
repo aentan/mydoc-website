@@ -166,7 +166,7 @@ content:
       upgrades: "Individual tests and/or upgraded packages are also available. All screenings are done onsite. To book your interest and/or for more information, please contact us at <a href=\"mailto:ops@my-doc.com\">ops@my-doc.com.</a>"
       cta:
         btn:
-          url: "/"
+          url: "/register-sme-health-plus/"
           label: "Register for SME Health+"
     # cdm:
     #   headline: "Complete employee healthcare with chronic disease management"

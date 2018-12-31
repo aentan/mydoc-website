@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ $.Param "meta.description" }}">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>{{ $.Param "long_title" }} &ndash; {{ .Site.Params.title }}</title>
+    {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+  </head>
+  <body>
+  
+    {{ partial "header.html" . }}
+
+    <main>
+
+      <section class="contact-info light">
+        <div class="container">
+          <h1>{{ $.Param "content.headline" }}</h1>
+          <div class="row">
+            <div class="col col-md-3 offset-md-1">
+              <p>Fill up this form to register your interest in SME Health+.</p>
+              <p>More information about SME Health+ is available <a href="{{ $.Param "content.hpb_link" }}">at HPB</a>.</p>
+            </div>
+            <div class="col col-md-6">
+              <form class="mydoc-form" id="sme-health-plus-form" action="https://www.enformed.io/s2mazkc" method="POST">
+                <div class="mydoc-form-group">
+                  <label for="company_name">Company name</label>
+                  <input type="text" name="company_name" id="company_name" placeholder="Acme Corp.">
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="company_uen">Unique Entity Number (UEN)</label>
+                  <input type="text" name="company_uen" id="company_uen" placeholder="123456789X">
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="company_industry">Industry</label>
+                  <select name="company_industry" id="company_industry">
+                    <option value="">Select industry</option>
+                    <option value="aerospace">Aerospace</option>
+                    <option value="assembly-and-test">Assembly and Test</option>
+                    <option value="clinical-research">Clinical Research</option>
+                    <option value="community-and-social-services">Community and Social Services</option>
+                    <option value="creative-industries">Creative Industries</option>
+                    <option value="early-childhood-care-and-education">Early Childhood Care and Education</option>
+                    <option value="environmental-cleaning">Environmental Cleaning</option>
+                    <option value="financial-industry">Financial Industry</option>
+                    <option value="Floristry">Floristry</option>
+                    <option value="food-and-beverage">Food and Beverage</option>
+                    <option value="generic-manufacturing-skills">Generic Manufacturing Skills</option>
+                    <option value="healthcare-support">Healthcare Support</option>
+                    <option value="hotel-and-accommodation-services">Hotel and Accommodation Services</option>
+                    <option value="human-resource">Human Resource</option>
+                    <option value="information-and-communications-technology">Information and Communications Technology</option>
+                    <option value="intellectual-property">Intellectual Property</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="port-services">Port Services</option>
+                    <option value="precision-engineering">Precision Engineering</option>
+                    <option value="process-industry">Process Industry</option>
+                    <option value="public-transport">Public Transport</option>
+                    <option value="retail">Retail</option>
+                    <option value="security">Security</option>
+                    <option value="textile-and-fashion">Textile and Fashion</option>
+                    <option value="tour-and-travel-services">Tour and Travel Services</option>
+                    <option value="tourism">Tourism</option>
+                    <option value="training-and-adult-education">Training and Adult Education</option>
+                    <option value="workplace-safety-and-health-for-marine-industry">Workplace Safety and Health for Marine Industry</option>
+                    <option value="wafer-fabrication">Wafer Fabrication</option>
+                    <option value="waste-management">Waste Management</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="employees_num">Number of employees</label>
+                  <input type="number" value="1" min="1" name="employees_num" id="employees_num" placeholder="1">
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="annual_sales">Annual sales turnover</label>
+                  <div class="mydoc-input-group prefixed-40">
+                    <div class="mydoc-form-prefix">SGD</div>
+                    <input type="text" name="annual_sales" id="annual_sales" placeholder="0">
+                  </div>
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="contact_name">Contact person name</label>
+                  <input type="text" name="contact_name" id="contact_name" placeholder="Dohn Joe">
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="contact_email">Contact person email</label>
+                  <input type="email" name="contact_email" id="contact_email" placeholder="dohnjoe@acme.co">
+                </div>
+                <div class="mydoc-form-group">
+                  <label for="message">Company address</label>
+                  <textarea name="company_address" id="company_address" rows="8" placeholder="200 Park Avenue, Manhattan, New York 10166"></textarea>
+                </div>
+                <input type="hidden" name="*default_email" value="{{ $.Param "content.form_to" }}">
+                <input type="hidden" name="*formname" value="SMEHealthPlus">
+                <input type="hidden" name="*honeypot">
+                <div class="mydoc-form-validation"></div>
+                <input class="mydoc-btn primary" type="submit" value="Register my interest">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    {{ $main := resources.Get "js/main.js" }}
+    {{ $js := slice $main | resources.Concat "js/bundle-default-single.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+  </body>
+</html>

@@ -47,7 +47,7 @@
 
     {{ partial "footer.html" . }}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     {{ $main := resources.Get "js/main.js" }}
     {{ $js := slice $main | resources.Concat "js/bundle-default-single.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>

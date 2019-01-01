@@ -35,9 +35,52 @@ main > section {
 }
 
 main > section:first-child {
+  padding-top: $navbar-height;
+
   @include media(">md") {
     // to clear the fixed navbar
     padding-top: $section-padding-top-md + $navbar-height-md;
+  }
+}
+
+
+//
+// Hero section
+// 
+
+section.hero {
+  min-height: 100vh;
+  display: flex;
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  @include media("<md") {
+    background-size: 90%;
+  }
+
+  @include media("<md", "landscape") {
+    min-height: 272px;
+    background-size: 40%;
+  }
+
+  @include media(">=md") {
+    height: calc(100vh - 244px);
+    min-height: 640px;
+    background-size: 60%;
+  }
+
+  @include media(">=md", "landscape") {
+    align-items: center;
+    background-size: 50%;
+  }
+
+  @include media(">=xl") {
+    background-size: 50%;
+  }
+
+  @include media(">=ul") {
+    background-size: 40%;
   }
 }
 

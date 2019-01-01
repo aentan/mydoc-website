@@ -18,11 +18,12 @@
   align-items: center;
   flex-wrap: wrap;
 
+  position: fixed;
+
   @include media(">md") {
     height: $navbar-height-md;
     padding-top: 0;
     padding-bottom: 0;
-    position: fixed;
   }
 }
 
@@ -43,6 +44,8 @@
 
     .mydoc-nav-link {
       display: block;
+      font-weight: $font-weight-bold;
+      font-size: $lead-font-size;
       padding-right: $navbar-link-padding-horizontal;
       padding-left: $navbar-link-padding-horizontal;
       padding-top: $navbar-link-padding-vertical;

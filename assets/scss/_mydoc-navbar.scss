@@ -12,6 +12,7 @@
   padding-bottom: 12px;
   font-weight: $navbar-font-weight;
   background-color: $navbar-bg;
+  backdrop-filter: $navbar-filter;
 
   display: flex;
   justify-content: space-between;

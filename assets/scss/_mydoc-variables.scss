@@ -167,7 +167,8 @@ $navbar-height-md:              80px;
 $navbar-font-weight:            $font-weight-semibold;
 $navbar-link-padding-horizontal:16px;
 $navbar-link-padding-vertical:  16px;
-$navbar-bg:                     rgba($color-ui-white, 0.96);
+$navbar-bg:                     rgba($color-ui-white, .8);
+$navbar-filter:                 blur(10px) contrast(.8);
 
 $card-border-radius:            $base-border-radius;
 $card-box-shadow:               $base-box-shadow;

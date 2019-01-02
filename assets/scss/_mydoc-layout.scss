@@ -35,7 +35,7 @@ main > section {
 }
 
 main > section:first-child {
-  padding-top: $navbar-height;
+  padding-top: $section-padding-top + $navbar-height;
 
   @include media(">md") {
     // to clear the fixed navbar

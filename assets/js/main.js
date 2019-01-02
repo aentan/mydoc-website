@@ -27,7 +27,7 @@ $(function() {
   };
 
   var $nav = $('.mydoc-navbar-menu .mydoc-navbar-nav');
-  var navTopLimit = 48;
+  var navTopLimit = 40;
   var scrollSensitivity = 5;
 
   $(window).on('scrolldelta', function (e) {
@@ -47,11 +47,14 @@ $(function() {
       navTopTarget = 0;
     }
     
-    $nav.css({
-      "margin-top": navTopTarget + "px",
-      "opacity": opacityTarget
-    });
+    if ($(window).width() < 768) {
+      $nav.css({
+        "margin-top": navTopTarget + "px",
+        "opacity": opacityTarget
+      });
+    }
   });
+
 
   // Contact form
   $('#contact-form').submit(function(e) {

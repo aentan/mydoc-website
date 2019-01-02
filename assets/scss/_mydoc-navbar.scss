@@ -20,6 +20,7 @@
   flex-wrap: wrap;
 
   position: fixed;
+  top: -0.5px;
 
   @include media(">md") {
     height: $navbar-height-md;

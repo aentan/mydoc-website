@@ -29,5 +29,6 @@
     {{ $main := resources.Get "js/main.js" }}
     {{ $js := slice $main | resources.Concat "js/bundle-default-single.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.RelPermalink }}" type="text/javascript"></script>
+    {{ template "_internal/google_analytics_async.html" . }}
   </body>
 </html>
